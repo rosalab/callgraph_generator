@@ -19,7 +19,7 @@ LLVM (18.1.1)
 			-G "Unix Makefiles" \
 			../llvm`
 
-`make -j `nproc``
+`make -j \`nproc\``
 
 `mkdir  ../prefix`
 
@@ -27,4 +27,14 @@ LLVM (18.1.1)
 
 #### Generating Call Graph from bitcode file generated
 
+I am going with writing a module pass
 
+from understanding, with module pass you get to
+analyze entire C files unlike function pass. 
+
+- created the CMake and MakeFile by using
+  [TyPM](https://github.com/sidchintamaneni/typm/tree/main)
+  repo as reference 
+
+- Command to run the generated shared object file
+`../../llvm-project/prefix/bin/opt -enable-new-pm=0 -load ./libCallGraph.so -cg ../../../linux/kernel/bpf/helpers.bc -o out`
