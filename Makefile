@@ -21,10 +21,16 @@ build_generator_func = \
 		&& make -j${NPROC})
 
 
-all: cgenerator
+all: cgenerator 
 
 cgenerator:
 	$(call build_generator_func, ${GENERATOR_DIR}, ${GENERATOR_BUILD})
 
+execute-CallGraph:
+	./llvm-project/prefix/bin/opt -enable-new-pm=0 -load ./build/lib/libCallGraph.so -cg ../linux/kernel/bpf/helpers.bc -o out 2>&1
+
+#execute-MPCallGraph:
+#	./llvm-project/prefix/bin/opt -enable-new-pm=0 -load ./build/lib/libMPCallGraph.so -mp-callgraph ../linux/kernel/bpf/helpers.bc -o out 2>&1
+	
 clean:
 	rm -rf ${GENERATOR_BUILD}
