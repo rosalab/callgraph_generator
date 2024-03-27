@@ -30,7 +30,7 @@ cgenerator:
 #	./llvm-project/prefix/bin/opt -enable-new-pm=0 -load ./build/lib/libFuncCallGraph.so -cg ../linux/kernel/bpf/helpers.bc -o out 2>&1
 
 execute:
-	build/lib/cgenerator @bc_bpf.list > output_bpf 2>&1
+	build/lib/cgenerator @bc_bpf.list > output_bpf_test_filepath 2>&1
 #execute-MPCallGraph:
 #	./llvm-project/prefix/bin/opt -enable-new-pm=0 -load ./build/lib/libMPCallGraph.so -mp-callgraph ../linux/kernel/bpf/helpers.bc -o out 2>&1
 	

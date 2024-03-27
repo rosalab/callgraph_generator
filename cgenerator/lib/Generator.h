@@ -39,9 +39,15 @@ typedef std::unordered_map<llvm::Module *, llvm:: StringRef> ModuleNameMap;
 // what if multiple files contain same function name
 // decided to use function pointers
 typedef std::vector<llvm::Function *> FunctionList;
+struct directCallStruct {
+	llvm::Function *F;
+	bool visited;
+	llvm::StringRef funcPath;
+};
+
+typedef directCallStruct directCallInfo;
 typedef std::unordered_map<llvm::Function *, 
-		std::vector
-		<std::pair<llvm::Function *, bool>>> CallerCalleeMap;
+		std::vector<directCallInfo>> CallerCalleeMap;
 typedef std::unordered_map<llvm::Function *, 
 		std::vector<std::string>> IndirCallerCalleeMap;
 typedef std::unordered_map<llvm::Function *, llvm:: StringRef> FunctionFileMap;

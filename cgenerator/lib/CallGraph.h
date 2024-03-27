@@ -18,7 +18,7 @@ class CustomCallGraph :
 		
 		void doModulePass(llvm::Module *);
 		void callGraphResolver(std::string);
-		void recursiveResolver(llvm::Function *, int);
+		void recursiveResolver(llvm::Function *, int, llvm::StringRef);
 };
 
 #endif // CALLGRAPH_H
