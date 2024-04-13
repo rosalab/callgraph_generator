@@ -3,7 +3,7 @@
 Dependencies:
 
 for this project, I am using latest version of
-LLVM (18.1.1)
+LLVM (15)
 
 
 #### LLVM build process
@@ -15,7 +15,7 @@ LLVM (18.1.1)
 			-DLLVM_TARGETS_TO_BUILD="ARM;X86;AArch64" \
 			-DLLVM_EXPERIMENTAL_TARGETS_TO_BUILD=WebAssembly \
 			-DCMAKE_BUILD_TYPE=Release \
-			-DLLVM_ENABLE_PROJECTS="clang;lldb" \
+			-DLLVM_ENABLE_PROJECTS="clang;lldb;lld" \
 			-G "Unix Makefiles" \
 			../llvm`
 
@@ -29,9 +29,20 @@ LLVM (18.1.1)
 
 - created the CMake and MakeFile by using
   [TyPM](https://github.com/sidchintamaneni/typm/tree/main)
-  repo as reference 
+  repo as reference
+- Checkout the MakeFile to see how to run the callgraph
+  - Once I resolve all the issue I will document that as well.
 
-- Command to run the generated shared object file
-`../../llvm-project/prefix/bin/opt -enable-new-pm=0 -load ./libCallGraph.so -cg ../../../linux/kernel/bpf/helpers.bc -o out`
+#### Documenting the decisions along the way
+
+- chose ThinLTO
+  - should check the effects of NO-LTO and FULL LTO
+- Currently doing static analysis on defconfig
+  - Roop go insane stack depth when did static analysis with
+    allyesconfig without indirectcall and loops
+  - the stack depth greatly depends on the config file that the
+    kernel uses
+ 
 
 
+ 
