@@ -1,0 +1,6 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_sk_redirect_map
+bpf_sk_redirect_map (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
+
+Maximum Stack Depth Used by the helper bpf_sk_redirect_map is: 0
+-----------------------------------------

@@ -1,0 +1,7 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_tcp_raw_check_syncookie_ipv4
+bpf_tcp_raw_check_syncookie_ipv4 (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
+
+	__cookie_v4_check Stack Depth of this function is already explored: 944
+Maximum Stack Depth Used by the helper bpf_tcp_raw_check_syncookie_ipv4 is: 944
+-----------------------------------------

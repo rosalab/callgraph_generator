@@ -1,0 +1,7 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_get_cgroup_classid_curr
+bpf_get_cgroup_classid_curr (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
+
+	task_cls_state Stack Depth of this function is already explored: 0
+Maximum Stack Depth Used by the helper bpf_get_cgroup_classid_curr is: 0
+-----------------------------------------

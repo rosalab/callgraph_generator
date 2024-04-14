@@ -1,0 +1,8 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_sk_assign
+bpf_sk_assign (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 24
+
+	refcount_warn_saturate Stack Depth of this function is already explored: 6760
+	*(indirect-calls): ./include/linux/skbuff.h:3193 (depth:0) Targets for indirect calls are not found in TyPM Analysis
+Maximum Stack Depth Used by the helper bpf_sk_assign is: 6784
+-----------------------------------------

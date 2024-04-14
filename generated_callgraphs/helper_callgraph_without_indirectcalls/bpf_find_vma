@@ -1,0 +1,14 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_find_vma
+bpf_find_vma (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 80
+
+	__mmap_lock_do_trace_start_locking Stack Depth of this function is already explored: 0
+	down_read_trylock Stack Depth of this function is already explored: 0
+	__mmap_lock_do_trace_acquire_returned Stack Depth of this function is already explored: 0
+	find_vma Stack Depth of this function is already explored: 6176
+	*(indirect-calls): kernel/bpf/task_iter.c:785 (depth:0) Targets for indirect calls are not found in TyPM Analysis
+	__mmap_lock_do_trace_released Stack Depth of this function is already explored: 0
+	up_read Stack Depth of this function is already explored: 112
+	irq_work_queue Stack Depth of this function is already explored: 16
+Maximum Stack Depth Used by the helper bpf_find_vma is: 6256
+-----------------------------------------

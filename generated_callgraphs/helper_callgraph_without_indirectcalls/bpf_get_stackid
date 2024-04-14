@@ -1,0 +1,49 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_get_stackid
+bpf_get_stackid (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 16
+
+	get_perf_callchain Stack Depth of this function is already explored: 384
+	__bpf_get_stackid (depth:1) File Path: kernel/bpf/stackmap.c:307 Stack Depth: 96
+
+		pcpu_freelist_pop (depth:2) File Path: kernel/bpf/stackmap.c:243 Stack Depth: 24
+
+			__pcpu_freelist_pop (depth:3) File Path: kernel/bpf/percpu_freelist.c:197 Stack Depth: 80
+
+				_find_first_bit Stack Depth of this function is already explored: 8
+				_raw_spin_trylock Stack Depth of this function is already explored: 0
+				_raw_spin_unlock Stack Depth of this function is already explored: 0
+				_find_next_bit Stack Depth of this function is already explored: 8
+				_raw_spin_trylock Stack Depth of this function is already explored: 0
+				_find_first_bit Stack Depth of this function is already explored: 8
+				_raw_spin_lock Stack Depth of this function is already explored: 0
+				_raw_spin_unlock Stack Depth of this function is already explored: 0
+				_find_next_bit Stack Depth of this function is already explored: 8
+				_raw_spin_lock Stack Depth of this function is already explored: 0
+				_raw_spin_unlock Stack Depth of this function is already explored: 0
+		stack_map_get_build_id_offset (depth:2) File Path: kernel/bpf/stackmap.c:247 Stack Depth: 96
+
+			__mmap_lock_do_trace_start_locking Stack Depth of this function is already explored: 0
+			down_read_trylock Stack Depth of this function is already explored: 0
+			__mmap_lock_do_trace_acquire_returned Stack Depth of this function is already explored: 0
+			find_vma Stack Depth of this function is already explored: 6176
+			build_id_parse Stack Depth of this function is already explored: 1432
+			__mmap_lock_do_trace_released Stack Depth of this function is already explored: 0
+			up_read Stack Depth of this function is already explored: 112
+			irq_work_queue Stack Depth of this function is already explored: 16
+		bcmp Stack Depth of this function is already explored: 0
+		pcpu_freelist_push (depth:2) File Path: kernel/bpf/stackmap.c:253 Stack Depth: 24
+
+			__pcpu_freelist_push (depth:3) File Path: kernel/bpf/percpu_freelist.c:95 Stack Depth: 96
+
+				_find_first_bit Stack Depth of this function is already explored: 8
+				_raw_spin_trylock Stack Depth of this function is already explored: 0
+				_find_next_bit Stack Depth of this function is already explored: 8
+				_raw_spin_trylock Stack Depth of this function is already explored: 0
+				_raw_spin_lock Stack Depth of this function is already explored: 0
+				_raw_spin_unlock Stack Depth of this function is already explored: 0
+		pcpu_freelist_push Stack Depth of this function is already explored: 128
+		bcmp Stack Depth of this function is already explored: 0
+		pcpu_freelist_pop Stack Depth of this function is already explored: 112
+		pcpu_freelist_push Stack Depth of this function is already explored: 128
+Maximum Stack Depth Used by the helper bpf_get_stackid is: 6384
+-----------------------------------------

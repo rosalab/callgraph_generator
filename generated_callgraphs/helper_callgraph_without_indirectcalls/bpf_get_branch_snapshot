@@ -1,0 +1,8 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_get_branch_snapshot
+bpf_get_branch_snapshot (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 8
+
+	__SCT__perf_snapshot_branch_stack (depth:1) File Path: kernel/trace/bpf_trace.c:1191 Stack Depth: -1
+ Function Not Found 
+Maximum Stack Depth Used by the helper bpf_get_branch_snapshot is: 8
+-----------------------------------------

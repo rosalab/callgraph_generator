@@ -1,0 +1,8 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_seq_write
+bpf_seq_write (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
+
+	seq_write (depth:1) File Path: kernel/trace/bpf_trace.c:510 Stack Depth: 16
+
+Maximum Stack Depth Used by the helper bpf_seq_write is: 16
+-----------------------------------------

@@ -1,0 +1,134 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_sys_close
+bpf_sys_close (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
+
+	close_fd (depth:1) File Path: kernel/bpf/syscall.c:5873 Stack Depth: 40
+
+		_raw_spin_lock Stack Depth of this function is already explored: 0
+		_raw_spin_unlock Stack Depth of this function is already explored: 0
+		_raw_spin_unlock Stack Depth of this function is already explored: 0
+		filp_close (depth:2) File Path: fs/file.c:672 Stack Depth: 24
+
+			__warn_printk Stack Depth of this function is already explored: 6760
+			*(indirect-calls): fs/open.c:1516 (depth:2) Targets for indirect calls are not found in TyPM Analysis
+			dnotify_flush (depth:3) File Path: fs/open.c:1519 Stack Depth: 40
+
+				fsnotify_find_mark (depth:4) File Path: fs/notify/dnotify/dnotify.c:165 Stack Depth: 32
+
+					fsnotify_grab_connector Stack Depth of this function is already explored: 16
+					refcount_warn_saturate Stack Depth of this function is already explored: 6760
+					_raw_spin_unlock Stack Depth of this function is already explored: 0
+				mutex_lock Stack Depth of this function is already explored: 96
+				_raw_spin_lock Stack Depth of this function is already explored: 0
+				kmem_cache_free Stack Depth of this function is already explored: 816
+				fsnotify_recalc_mask (depth:4) File Path: fs/notify/dnotify/dnotify.c:79 Stack Depth: 8
+
+					_raw_spin_lock Stack Depth of this function is already explored: 0
+					__fsnotify_recalc_mask Stack Depth of this function is already explored: 16
+					_raw_spin_unlock Stack Depth of this function is already explored: 0
+					__fsnotify_update_child_dentry_flags (depth:5) File Path: fs/notify/mark.c:194 Stack Depth: 56
+
+						_raw_spin_lock Stack Depth of this function is already explored: 0
+						_raw_spin_lock Stack Depth of this function is already explored: 0
+						_raw_spin_lock Stack Depth of this function is already explored: 0
+						_raw_spin_unlock Stack Depth of this function is already explored: 0
+						_raw_spin_unlock Stack Depth of this function is already explored: 0
+						_raw_spin_unlock Stack Depth of this function is already explored: 0
+				_raw_spin_unlock Stack Depth of this function is already explored: 0
+				fsnotify_detach_mark Stack Depth of this function is already explored: 1824
+				mutex_unlock Stack Depth of this function is already explored: 80
+				fsnotify_free_mark (depth:4) File Path: fs/notify/dnotify/dnotify.c:196 Stack Depth: 24
+
+					_raw_spin_lock Stack Depth of this function is already explored: 0
+					_raw_spin_unlock Stack Depth of this function is already explored: 0
+					_raw_spin_unlock Stack Depth of this function is already explored: 0
+					*(indirect-calls): fs/notify/mark.c:490 (depth:4) Targets for indirect calls are not found in TyPM Analysis
+				mutex_unlock Stack Depth of this function is already explored: 80
+				fsnotify_put_mark Stack Depth of this function is already explored: 1808
+			locks_remove_posix (depth:3) File Path: fs/open.c:1520 Stack Depth: -1
+
+				__init_waitqueue_head (depth:4) File Path: fs/locks.c:269 Stack Depth: 0
+
+			*(indirect-calls): fs/locks.c:2354 (depth:3) Targets for indirect calls are not found in TyPM Analysis
+				posix_lock_inode (depth:4) File Path: fs/locks.c:1402 Stack Depth: -1
+
+					locks_get_lock_context (depth:5) File Path: fs/locks.c:1161 Stack Depth: 24
+
+						kmem_cache_alloc Stack Depth of this function is already explored: 848
+						kmem_cache_free Stack Depth of this function is already explored: 816
+						__SCT__tp_func_locks_get_lock_context (depth:6) File Path: ./include/trace/events/filelock.h:38 Stack Depth: -1
+ Function Not Found 
+					kmem_cache_alloc Stack Depth of this function is already explored: 848
+					__init_waitqueue_head Stack Depth of this function is already explored: 0
+					kmem_cache_alloc Stack Depth of this function is already explored: 848
+					__init_waitqueue_head Stack Depth of this function is already explored: 0
+					__SCT__might_resched Stack Depth of this function is already explored: 0
+					__percpu_down_read Stack Depth of this function is already explored: 3072
+					_raw_spin_lock Stack Depth of this function is already explored: 0
+					*(indirect-calls): fs/locks.c:1191 (depth:4) Targets for indirect calls are not found in TyPM Analysis
+					__module_get Stack Depth of this function is already explored: 0
+					_raw_spin_unlock Stack Depth of this function is already explored: 0
+					rcuwait_wake_up Stack Depth of this function is already explored: 8
+					*(indirect-calls): fs/locks.c:1197 (depth:4) Targets for indirect calls are not found in TyPM Analysis
+					module_put Stack Depth of this function is already explored: 0
+					*(indirect-calls): fs/locks.c:410 (depth:4) Targets for indirect calls are not found in TyPM Analysis
+					_raw_spin_lock Stack Depth of this function is already explored: 0
+					*(indirect-calls): fs/locks.c:713 (depth:4) Targets for indirect calls are not found in TyPM Analysis
+					__wake_up Stack Depth of this function is already explored: 96
+					__locks_insert_block (depth:5) File Path: fs/locks.c:1219 Stack Depth: 56
+
+					*(indirect-calls): fs/locks.c:807 (depth:5) Targets for indirect calls are not found in TyPM Analysis
+					*(indirect-calls): fs/locks.c:713 (depth:5) Targets for indirect calls are not found in TyPM Analysis
+						__wake_up Stack Depth of this function is already explored: 96
+					_raw_spin_unlock Stack Depth of this function is already explored: 0
+					_raw_spin_lock Stack Depth of this function is already explored: 0
+					_raw_spin_unlock Stack Depth of this function is already explored: 0
+					locks_wake_up_blocks (depth:5) File Path: fs/locks.c:870 Stack Depth: 16
+
+						_raw_spin_lock Stack Depth of this function is already explored: 0
+						*(indirect-calls): fs/locks.c:713 (depth:5) Targets for indirect calls are not found in TyPM Analysis
+						__wake_up Stack Depth of this function is already explored: 96
+						_raw_spin_unlock Stack Depth of this function is already explored: 0
+					_raw_spin_lock Stack Depth of this function is already explored: 0
+					_raw_spin_unlock Stack Depth of this function is already explored: 0
+					locks_wake_up_blocks Stack Depth of this function is already explored: 112
+					*(indirect-calls): fs/locks.c:410 (depth:4) Targets for indirect calls are not found in TyPM Analysis
+					*(indirect-calls): fs/locks.c:427 (depth:4) Targets for indirect calls are not found in TyPM Analysis
+					_raw_spin_lock Stack Depth of this function is already explored: 0
+					_raw_spin_unlock Stack Depth of this function is already explored: 0
+					_raw_spin_lock Stack Depth of this function is already explored: 0
+					_raw_spin_unlock Stack Depth of this function is already explored: 0
+					_raw_spin_lock Stack Depth of this function is already explored: 0
+					_raw_spin_unlock Stack Depth of this function is already explored: 0
+					locks_wake_up_blocks Stack Depth of this function is already explored: 112
+					*(indirect-calls): fs/locks.c:410 (depth:4) Targets for indirect calls are not found in TyPM Analysis
+					*(indirect-calls): fs/locks.c:427 (depth:4) Targets for indirect calls are not found in TyPM Analysis
+					_raw_spin_lock Stack Depth of this function is already explored: 0
+					_raw_spin_unlock Stack Depth of this function is already explored: 0
+					_raw_spin_lock Stack Depth of this function is already explored: 0
+					_raw_spin_unlock Stack Depth of this function is already explored: 0
+					*(indirect-calls): fs/locks.c:410 (depth:4) Targets for indirect calls are not found in TyPM Analysis
+					*(indirect-calls): fs/locks.c:427 (depth:4) Targets for indirect calls are not found in TyPM Analysis
+					_raw_spin_lock Stack Depth of this function is already explored: 0
+					_raw_spin_unlock Stack Depth of this function is already explored: 0
+					locks_wake_up_blocks Stack Depth of this function is already explored: 112
+					locks_wake_up_blocks Stack Depth of this function is already explored: 112
+					_raw_spin_unlock Stack Depth of this function is already explored: 0
+					rcuwait_wake_up Stack Depth of this function is already explored: 8
+					__SCT__tp_func_posix_lock_inode (depth:5) File Path: ./include/trace/events/filelock.h:103 Stack Depth: -1
+ Function Not Found 
+					locks_release_private (depth:5) File Path: fs/locks.c:352 Stack Depth: 8
+
+					*(indirect-calls): fs/locks.c:308 (depth:5) Targets for indirect calls are not found in TyPM Analysis
+					*(indirect-calls): fs/locks.c:314 (depth:5) Targets for indirect calls are not found in TyPM Analysis
+					kmem_cache_free Stack Depth of this function is already explored: 816
+					locks_release_private Stack Depth of this function is already explored: 8
+					kmem_cache_free Stack Depth of this function is already explored: 816
+					locks_release_private Stack Depth of this function is already explored: 8
+					kmem_cache_free Stack Depth of this function is already explored: 816
+			*(indirect-calls): fs/locks.c:2637 (depth:3) Targets for indirect calls are not found in TyPM Analysis
+				__SCT__tp_func_locks_remove_posix (depth:4) File Path: ./include/trace/events/filelock.h:111 Stack Depth: -1
+ Function Not Found 
+			fput Stack Depth of this function is already explored: 2088
+Maximum Stack Depth Used by the helper bpf_sys_close is: 6896
+-----------------------------------------

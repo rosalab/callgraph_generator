@@ -1,0 +1,8 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_user_rnd_u32
+bpf_user_rnd_u32 (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
+
+	prandom_u32_state (depth:1) File Path: kernel/bpf/core.c:2819 Stack Depth: 0
+
+Maximum Stack Depth Used by the helper bpf_user_rnd_u32 is: 0
+-----------------------------------------

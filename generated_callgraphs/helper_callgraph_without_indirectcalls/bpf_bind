@@ -1,0 +1,30 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_bind
+bpf_bind (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
+
+	__inet_bind (depth:1) File Path: net/core/filter.c:5737 Stack Depth: 48
+
+		inet_addr_type_table (depth:2) File Path: net/ipv4/af_inet.c:495 Stack Depth: -1
+
+			__rcu_read_lock Stack Depth of this function is already explored: 0
+			fib_table_lookup Stack Depth of this function is already explored: 120
+			__rcu_read_unlock Stack Depth of this function is already explored: 6160
+		ns_capable Stack Depth of this function is already explored: 6664
+		lock_sock_nested Stack Depth of this function is already explored: 3040
+		*(indirect-calls): net/ipv4/af_inet.c:538 (depth:1) Targets for indirect calls are not found in TyPM Analysis
+		__cgroup_bpf_run_filter_sk (depth:2) File Path: net/ipv4/af_inet.c:544 Stack Depth: 88
+
+			migrate_disable Stack Depth of this function is already explored: 0
+			__rcu_read_lock Stack Depth of this function is already explored: 0
+			sched_clock Stack Depth of this function is already explored: 0
+			*(indirect-calls): ./include/linux/bpf.h:1234 (depth:2) Targets for indirect calls are not found in TyPM Analysis
+			sched_clock Stack Depth of this function is already explored: 0
+			*(indirect-calls): ./include/linux/bpf.h:1234 (depth:2) Targets for indirect calls are not found in TyPM Analysis
+			__rcu_read_unlock Stack Depth of this function is already explored: 6160
+			migrate_enable Stack Depth of this function is already explored: 6816
+		*(indirect-calls): net/ipv4/af_inet.c:548 (depth:1) Targets for indirect calls are not found in TyPM Analysis
+		dst_release Stack Depth of this function is already explored: 248
+		release_sock Stack Depth of this function is already explored: 8224
+*(indirect-calls): net/core/filter.c:5747 (depth:0) Targets for indirect calls are not found in TyPM Analysis
+Maximum Stack Depth Used by the helper bpf_bind is: 8272
+-----------------------------------------

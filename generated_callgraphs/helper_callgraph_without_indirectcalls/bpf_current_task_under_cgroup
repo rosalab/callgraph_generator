@@ -1,0 +1,6 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_current_task_under_cgroup
+bpf_current_task_under_cgroup (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
+
+Maximum Stack Depth Used by the helper bpf_current_task_under_cgroup is: 0
+-----------------------------------------

@@ -1,0 +1,8 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_ringbuf_submit_dynptr
+bpf_ringbuf_submit_dynptr (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 8
+
+	irq_work_queue Stack Depth of this function is already explored: 16
+	bpf_dynptr_set_null Stack Depth of this function is already explored: 0
+Maximum Stack Depth Used by the helper bpf_ringbuf_submit_dynptr is: 24
+-----------------------------------------

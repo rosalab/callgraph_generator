@@ -1,0 +1,19 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_get_stack
+bpf_get_stack (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
+
+	__bpf_get_stack (depth:1) File Path: kernel/bpf/stackmap.c:467 Stack Depth: 88
+
+		get_callchain_entry (depth:2) File Path: kernel/bpf/stackmap.c:183 Stack Depth: 0
+
+		stack_trace_save_tsk (depth:2) File Path: kernel/bpf/stackmap.c:188 Stack Depth: 48
+
+			refcount_warn_saturate Stack Depth of this function is already explored: 6760
+			arch_stack_walk Stack Depth of this function is already explored: 304
+			put_task_stack Stack Depth of this function is already explored: 248
+		put_callchain_entry (depth:2) File Path: kernel/bpf/stackmap.c:205 Stack Depth: 0
+
+		get_perf_callchain Stack Depth of this function is already explored: 384
+		stack_map_get_build_id_offset Stack Depth of this function is already explored: 6272
+Maximum Stack Depth Used by the helper bpf_get_stack is: 6896
+-----------------------------------------

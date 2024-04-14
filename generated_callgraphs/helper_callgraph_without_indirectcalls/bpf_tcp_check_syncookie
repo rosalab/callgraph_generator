@@ -1,0 +1,8 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_tcp_check_syncookie
+bpf_tcp_check_syncookie (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
+
+	__cookie_v4_check Stack Depth of this function is already explored: 944
+	__cookie_v6_check Stack Depth of this function is already explored: 984
+Maximum Stack Depth Used by the helper bpf_tcp_check_syncookie is: 984
+-----------------------------------------

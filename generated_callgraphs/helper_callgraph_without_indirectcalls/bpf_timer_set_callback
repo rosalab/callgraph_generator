@@ -1,0 +1,9 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_timer_set_callback
+bpf_timer_set_callback (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 56
+
+	bpf_prog_inc_not_zero (depth:1) File Path: kernel/bpf/helpers.c:1254 Stack Depth: 0
+
+	bpf_prog_put Stack Depth of this function is already explored: 2384
+Maximum Stack Depth Used by the helper bpf_timer_set_callback is: 2440
+-----------------------------------------

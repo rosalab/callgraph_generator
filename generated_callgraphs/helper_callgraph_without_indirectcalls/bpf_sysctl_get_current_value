@@ -1,0 +1,6 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_sysctl_get_current_value
+bpf_sysctl_get_current_value (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 32
+
+Maximum Stack Depth Used by the helper bpf_sysctl_get_current_value is: 32
+-----------------------------------------

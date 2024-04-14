@@ -1,0 +1,8 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_skb_load_helper_16_no_cache
+bpf_skb_load_helper_16_no_cache (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 16
+
+	skb_copy_bits Stack Depth of this function is already explored: 72
+	bpf_internal_load_pointer_neg_helper Stack Depth of this function is already explored: 0
+Maximum Stack Depth Used by the helper bpf_skb_load_helper_16_no_cache is: 88
+-----------------------------------------

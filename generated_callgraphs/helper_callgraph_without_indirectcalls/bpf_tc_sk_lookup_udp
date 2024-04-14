@@ -1,0 +1,7 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_tc_sk_lookup_udp
+bpf_tc_sk_lookup_udp (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
+
+	__bpf_sk_lookup Stack Depth of this function is already explored: 7088
+Maximum Stack Depth Used by the helper bpf_tc_sk_lookup_udp is: 7088
+-----------------------------------------

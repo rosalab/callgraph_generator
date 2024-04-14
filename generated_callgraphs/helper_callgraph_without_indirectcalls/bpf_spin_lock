@@ -1,0 +1,6 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_spin_lock
+bpf_spin_lock (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 24
+
+Maximum Stack Depth Used by the helper bpf_spin_lock is: 24
+-----------------------------------------

@@ -1,0 +1,6 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_bprm_opts_set
+bpf_bprm_opts_set (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
+
+Maximum Stack Depth Used by the helper bpf_bprm_opts_set is: 0
+-----------------------------------------

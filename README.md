@@ -2,8 +2,12 @@
 
 Dependencies:
 
+<<<<<<< HEAD
 for this project, I am using latest version of
 LLVM (15)
+=======
+for this project, I am using LLVM 15 for the project.
+>>>>>>> cba5587 (stack-depth and callgraph for direct calls generated)
 
 
 #### LLVM build process
@@ -44,5 +48,8 @@ LLVM (15)
     kernel uses
  
 
+- TODO
+    - Explains how cgenerator code works
+    
 
  

@@ -1,0 +1,8 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_skb_set_tunnel_key
+bpf_skb_set_tunnel_key (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 104
+
+	dst_release Stack Depth of this function is already explored: 248
+	rcuref_get_slowpath Stack Depth of this function is already explored: 16
+Maximum Stack Depth Used by the helper bpf_skb_set_tunnel_key is: 352
+-----------------------------------------

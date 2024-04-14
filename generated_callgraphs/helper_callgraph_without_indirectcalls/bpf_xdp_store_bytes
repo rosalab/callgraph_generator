@@ -1,0 +1,6 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_xdp_store_bytes
+bpf_xdp_store_bytes (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 64
+
+Maximum Stack Depth Used by the helper bpf_xdp_store_bytes is: 64
+-----------------------------------------

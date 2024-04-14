@@ -1,0 +1,7 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_send_signal_thread
+bpf_send_signal_thread (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
+
+	bpf_send_signal_common Stack Depth of this function is already explored: 6808
+Maximum Stack Depth Used by the helper bpf_send_signal_thread is: 6808
+-----------------------------------------

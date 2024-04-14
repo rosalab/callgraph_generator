@@ -1,0 +1,10 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_task_storage_delete_recur
+bpf_task_storage_delete_recur (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 24
+
+	migrate_disable Stack Depth of this function is already explored: 0
+	migrate_enable Stack Depth of this function is already explored: 6816
+	bpf_selem_unlink Stack Depth of this function is already explored: 6888
+	migrate_enable Stack Depth of this function is already explored: 6816
+Maximum Stack Depth Used by the helper bpf_task_storage_delete_recur is: 6912
+-----------------------------------------

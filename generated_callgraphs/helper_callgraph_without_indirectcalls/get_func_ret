@@ -1,0 +1,6 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: get_func_ret
+get_func_ret (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
+
+Maximum Stack Depth Used by the helper get_func_ret is: 0
+-----------------------------------------

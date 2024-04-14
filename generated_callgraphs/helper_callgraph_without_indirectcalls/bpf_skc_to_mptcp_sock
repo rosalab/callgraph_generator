@@ -1,0 +1,6 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_skc_to_mptcp_sock
+bpf_skc_to_mptcp_sock (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
+
+Maximum Stack Depth Used by the helper bpf_skc_to_mptcp_sock is: 0
+-----------------------------------------
