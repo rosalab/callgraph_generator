@@ -1,0 +1,7 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_probe_read_kernel_str
+bpf_probe_read_kernel_str (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 24
+
+	strncpy_from_kernel_nofault Stack Depth of this function is already explored: 24
+Maximum Stack Depth Used by the helper bpf_probe_read_kernel_str is: 48
+-----------------------------------------

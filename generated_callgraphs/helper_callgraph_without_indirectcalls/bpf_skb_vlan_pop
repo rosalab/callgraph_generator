@@ -1,0 +1,17 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_skb_vlan_pop
+bpf_skb_vlan_pop (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 24
+
+	csum_partial Stack Depth of this function is already explored: 0
+	skb_vlan_pop (depth:1) File Path: net/core/filter.c:3200 Stack Depth: 40
+
+		__skb_vlan_pop (depth:2) File Path: net/core/skbuff.c:6183 Stack Depth: 32
+
+			__warn_printk Stack Depth of this function is already explored: 6760
+			__pskb_pull_tail Stack Depth of this function is already explored: 1104
+			pskb_expand_head Stack Depth of this function is already explored: 1048
+			csum_partial Stack Depth of this function is already explored: 0
+		__skb_vlan_pop Stack Depth of this function is already explored: 6792
+	csum_partial Stack Depth of this function is already explored: 0
+Maximum Stack Depth Used by the helper bpf_skb_vlan_pop is: 6856
+-----------------------------------------

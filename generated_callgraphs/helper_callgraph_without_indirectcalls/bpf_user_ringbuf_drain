@@ -1,0 +1,10 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_user_ringbuf_drain
+bpf_user_ringbuf_drain (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 120
+
+	bpf_dynptr_check_size Stack Depth of this function is already explored: 0
+	bpf_dynptr_init Stack Depth of this function is already explored: 0
+	*(indirect-calls): kernel/bpf/ringbuf.c:764 (depth:0) Targets for indirect calls are not found in TyPM Analysis
+	irq_work_queue Stack Depth of this function is already explored: 16
+Maximum Stack Depth Used by the helper bpf_user_ringbuf_drain is: 136
+-----------------------------------------

@@ -1,0 +1,6 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_skb_set_tunnel_opt
+bpf_skb_set_tunnel_opt (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 8
+
+Maximum Stack Depth Used by the helper bpf_skb_set_tunnel_opt is: 8
+-----------------------------------------

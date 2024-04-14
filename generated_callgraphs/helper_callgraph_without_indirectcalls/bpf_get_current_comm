@@ -1,0 +1,7 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_get_current_comm
+bpf_get_current_comm (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 24
+
+	sized_strscpy Stack Depth of this function is already explored: 8
+Maximum Stack Depth Used by the helper bpf_get_current_comm is: 32
+-----------------------------------------

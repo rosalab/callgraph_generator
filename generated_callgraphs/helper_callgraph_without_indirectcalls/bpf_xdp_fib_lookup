@@ -1,0 +1,37 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_xdp_fib_lookup
+bpf_xdp_fib_lookup (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
+
+	bpf_ipv4_fib_lookup (depth:1) File Path: net/core/filter.c:6122 Stack Depth: -1
+
+		dev_get_by_index_rcu Stack Depth of this function is already explored: 0
+		fib_get_table Stack Depth of this function is already explored: 0
+		fib_table_lookup Stack Depth of this function is already explored: 120
+		__fib_lookup Stack Depth of this function is already explored: 352
+		__rcu_read_lock Stack Depth of this function is already explored: 0
+		fib_table_lookup Stack Depth of this function is already explored: 120
+		fib_table_lookup Stack Depth of this function is already explored: 120
+		__rcu_read_unlock Stack Depth of this function is already explored: 6160
+		fib_select_path Stack Depth of this function is already explored: 1176
+		ip_mtu_from_fib_result (depth:2) File Path: net/core/filter.c:5914 Stack Depth: 8
+
+			find_exception Stack Depth of this function is already explored: 920
+		fib_result_prefsrc Stack Depth of this function is already explored: 48
+		__ipv4_neigh_lookup_noref (depth:2) File Path: net/core/filter.c:5952 Stack Depth: 0
+
+		__ipv6_neigh_lookup_noref_stub (depth:2) File Path: net/core/filter.c:5955 Stack Depth: 0
+
+	bpf_ipv6_fib_lookup (depth:1) File Path: net/core/filter.c:6127 Stack Depth: -1
+
+		__ipv6_addr_type Stack Depth of this function is already explored: 0
+		__ipv6_addr_type Stack Depth of this function is already explored: 0
+		dev_get_by_index_rcu Stack Depth of this function is already explored: 0
+		*(indirect-calls): net/core/filter.c:6023 (depth:1) Targets for indirect calls are not found in TyPM Analysis
+		*(indirect-calls): net/core/filter.c:6027 (depth:1) Targets for indirect calls are not found in TyPM Analysis
+		*(indirect-calls): net/core/filter.c:6035 (depth:1) Targets for indirect calls are not found in TyPM Analysis
+		*(indirect-calls): net/core/filter.c:6056 (depth:1) Targets for indirect calls are not found in TyPM Analysis
+		*(indirect-calls): net/core/filter.c:6060 (depth:1) Targets for indirect calls are not found in TyPM Analysis
+		*(indirect-calls): net/core/filter.c:6081 (depth:1) Targets for indirect calls are not found in TyPM Analysis
+		__ipv6_neigh_lookup_noref_stub Stack Depth of this function is already explored: 0
+Maximum Stack Depth Used by the helper bpf_xdp_fib_lookup is: 6160
+-----------------------------------------

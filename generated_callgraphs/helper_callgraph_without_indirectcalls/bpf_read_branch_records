@@ -1,0 +1,6 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_read_branch_records
+bpf_read_branch_records (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 8
+
+Maximum Stack Depth Used by the helper bpf_read_branch_records is: 8
+-----------------------------------------

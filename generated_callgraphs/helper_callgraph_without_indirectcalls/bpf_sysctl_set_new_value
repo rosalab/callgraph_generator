@@ -1,0 +1,6 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_sysctl_set_new_value
+bpf_sysctl_set_new_value (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 16
+
+Maximum Stack Depth Used by the helper bpf_sysctl_set_new_value is: 16
+-----------------------------------------

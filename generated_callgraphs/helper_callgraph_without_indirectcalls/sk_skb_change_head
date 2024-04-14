@@ -1,0 +1,7 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: sk_skb_change_head
+sk_skb_change_head (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 24
+
+	pskb_expand_head Stack Depth of this function is already explored: 1048
+Maximum Stack Depth Used by the helper sk_skb_change_head is: 1072
+-----------------------------------------

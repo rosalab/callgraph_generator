@@ -1,0 +1,12 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_dynptr_read
+bpf_dynptr_read (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 8
+
+	__bpf_skb_load_bytes (depth:1) File Path: kernel/bpf/helpers.c:1567 Stack Depth: 24
+
+		skb_copy_bits Stack Depth of this function is already explored: 72
+	__bpf_xdp_load_bytes (depth:1) File Path: kernel/bpf/helpers.c:1569 Stack Depth: 56
+
+	__warn_printk Stack Depth of this function is already explored: 6760
+Maximum Stack Depth Used by the helper bpf_dynptr_read is: 6768
+-----------------------------------------

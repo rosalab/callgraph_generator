@@ -1,0 +1,7 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_get_hash_recalc
+bpf_get_hash_recalc (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 8
+
+	__skb_get_hash Stack Depth of this function is already explored: 968
+Maximum Stack Depth Used by the helper bpf_get_hash_recalc is: 976
+-----------------------------------------

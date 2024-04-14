@@ -1,0 +1,6 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_lwt_xmit_push_encap
+bpf_lwt_xmit_push_encap (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
+
+Maximum Stack Depth Used by the helper bpf_lwt_xmit_push_encap is: 0
+-----------------------------------------

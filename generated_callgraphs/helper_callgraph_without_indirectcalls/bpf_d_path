@@ -1,0 +1,8 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_d_path
+bpf_d_path (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 40
+
+	copy_from_kernel_nofault Stack Depth of this function is already explored: 24
+	d_path Stack Depth of this function is already explored: 6312
+Maximum Stack Depth Used by the helper bpf_d_path is: 6352
+-----------------------------------------

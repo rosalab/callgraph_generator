@@ -1,0 +1,37 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_send_signal
+bpf_send_signal (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
+
+	bpf_send_signal_common (depth:1) File Path: kernel/trace/bpf_trace.c:886 Stack Depth: 48
+
+		nmi_uaccess_okay Stack Depth of this function is already explored: 0
+		refcount_warn_saturate Stack Depth of this function is already explored: 6760
+		irq_work_queue Stack Depth of this function is already explored: 16
+		group_send_sig_info (depth:2) File Path: kernel/trace/bpf_trace.c:881 Stack Depth: 40
+
+			__rcu_read_lock Stack Depth of this function is already explored: 0
+			check_kill_permission (depth:3) File Path: kernel/signal.c:1449 Stack Depth: 32
+
+				audit_signal_info (depth:4) File Path: kernel/signal.c:843 Stack Depth: 48
+
+					__rcu_read_lock Stack Depth of this function is already explored: 0
+					__rcu_read_unlock Stack Depth of this function is already explored: 6160
+					__rcu_read_unlock Stack Depth of this function is already explored: 6160
+					security_current_getsecid_subj Stack Depth of this function is already explored: 16
+					audit_signal_info_syscall (depth:5) File Path: kernel/audit.c:2410 Stack Depth: 40
+
+						__rcu_read_lock Stack Depth of this function is already explored: 0
+						__rcu_read_unlock Stack Depth of this function is already explored: 6160
+						security_task_getsecid_obj (depth:6) File Path: kernel/auditsc.c:2759 Stack Depth: 24
+
+						*(indirect-calls): security/security.c:3373 (depth:6) Targets for indirect calls are not found in TyPM Analysis
+						kmalloc_trace Stack Depth of this function is already explored: 848
+						security_task_getsecid_obj Stack Depth of this function is already explored: 24
+				ns_capable Stack Depth of this function is already explored: 6664
+				security_task_kill (depth:4) File Path: kernel/signal.c:864 Stack Depth: 40
+
+				*(indirect-calls): security/security.c:3511 (depth:4) Targets for indirect calls are not found in TyPM Analysis
+			__rcu_read_unlock Stack Depth of this function is already explored: 6160
+			do_send_sig_info Stack Depth of this function is already explored: 1120
+Maximum Stack Depth Used by the helper bpf_send_signal is: 6808
+-----------------------------------------

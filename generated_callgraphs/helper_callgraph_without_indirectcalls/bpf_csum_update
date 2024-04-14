@@ -1,0 +1,6 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_csum_update
+bpf_csum_update (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 4
+
+Maximum Stack Depth Used by the helper bpf_csum_update is: 4
+-----------------------------------------

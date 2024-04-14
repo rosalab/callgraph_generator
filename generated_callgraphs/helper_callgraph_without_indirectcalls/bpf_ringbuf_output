@@ -1,0 +1,8 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_ringbuf_output
+bpf_ringbuf_output (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 40
+
+	__bpf_ringbuf_reserve Stack Depth of this function is already explored: 80
+	irq_work_queue Stack Depth of this function is already explored: 16
+Maximum Stack Depth Used by the helper bpf_ringbuf_output is: 120
+-----------------------------------------

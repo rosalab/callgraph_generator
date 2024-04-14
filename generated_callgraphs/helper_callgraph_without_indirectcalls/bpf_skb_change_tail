@@ -1,0 +1,10 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_skb_change_tail
+bpf_skb_change_tail (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 8
+
+	__bpf_skb_change_tail (depth:1) File Path: net/core/filter.c:3787 Stack Depth: 40
+
+		skb_ensure_writable Stack Depth of this function is already explored: 1128
+		pskb_expand_head Stack Depth of this function is already explored: 1048
+Maximum Stack Depth Used by the helper bpf_skb_change_tail is: 1176
+-----------------------------------------

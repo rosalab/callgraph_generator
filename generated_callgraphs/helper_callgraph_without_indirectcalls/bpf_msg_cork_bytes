@@ -1,0 +1,6 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_msg_cork_bytes
+bpf_msg_cork_bytes (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
+
+Maximum Stack Depth Used by the helper bpf_msg_cork_bytes is: 0
+-----------------------------------------

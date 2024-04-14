@@ -35,22 +35,30 @@
 typedef std::vector<std::pair<llvm::Module *, llvm:: StringRef>> ModuleList;
 typedef std::unordered_map<llvm::Module *, llvm:: StringRef> ModuleNameMap;
 
+enum callType_t{
+	DIRECT_CALL,
+	INDIRECT_CALL
+};
 // Currently using string to uniquely identify a function
 // what if multiple files contain same function name
 // decided to use function pointers
 typedef std::vector<llvm::Function *> FunctionList;
-struct directCallStruct {
+struct CallStruct {
 	llvm::Function *F;
 	bool visited;
 	llvm::StringRef funcPath;
+	callType_t callType;
+  int stackDepth;
 };
 
-typedef directCallStruct directCallInfo;
+typedef CallStruct CallInfo;
 typedef std::unordered_map<llvm::Function *, 
-		std::vector<directCallInfo>> CallerCalleeMap;
+		std::vector<CallInfo>> CallerCalleeMap;
 typedef std::unordered_map<llvm::Function *, 
 		std::vector<std::string>> IndirCallerCalleeMap;
 typedef std::unordered_map<llvm::Function *, llvm:: StringRef> FunctionFileMap;
+typedef std::unordered_map<std::string,
+		std::vector<llvm::Function *>> IndirectTargets_t;
 
 struct GlobalContext {
 	GlobalContext() {}
@@ -62,6 +70,7 @@ struct GlobalContext {
 	CallerCalleeMap ccMap;
 	IndirCallerCalleeMap indirCCMap;
 	FunctionFileMap ffMap;
+ 	IndirectTargets_t indirTargets;
 };
 
 

@@ -10,14 +10,15 @@ message(STATUS "Found LLVM ${LLVM_PACKAGE_VERSION}")
 message(STATUS "Using LLVMConfig.cmake in: ${LLVM_DIR}")
 
 SET(CMAKE_CXX_FLAGS "-Wall -fno-rtti")
-
+SET(CMAKE_BUILD_TYPE Debug)
 #add_library(FuncCallGraph SHARED FuncCallGraph.cc)
 #add_library(MPCallGraph SHARED MPCallGraph.cc)
 
 add_executable(cgenerator Generator.cc 
 						  Generator.h
 						  CallGraph.cc
-						  CallGraph.h)
+						  CallGraph.h 
+              FunctionStackUsage.h)
 
 #llvm_map_components_to_libnames(llvm_libs all)
 
