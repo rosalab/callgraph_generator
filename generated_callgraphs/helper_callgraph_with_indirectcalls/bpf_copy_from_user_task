@@ -1,0 +1,6 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_copy_from_user_task
+bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 32
+	access_process_vm Stack Depth of this function is already explored: 3824
+Maximum Stack Depth Used by the helper bpf_copy_from_user_task is: 3856
+-----------------------------------------

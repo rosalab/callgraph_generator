@@ -1,9 +1,7 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_sysctl_get_name
 bpf_sysctl_get_name (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 40
-
 	sysctl_cpy_dir (depth:1) File Path: kernel/bpf/cgroup.c:2058 Stack Depth: 32
-
 		sysctl_cpy_dir WARNING: Found a loop
 		sized_strscpy Stack Depth of this function is already explored: 8
 		sized_strscpy Stack Depth of this function is already explored: 8

@@ -1,0 +1,6 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_l3_csum_replace
+bpf_l3_csum_replace (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 64
+	skb_ensure_writable Stack Depth of this function is already explored: 1936
+Maximum Stack Depth Used by the helper bpf_l3_csum_replace is: 2000
+-----------------------------------------

@@ -1,18 +1,13 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_tcp_gen_syncookie
 bpf_tcp_gen_syncookie (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 16
-
 	tcp_v4_get_syncookie (depth:1) File Path: net/core/filter.c:7393 Stack Depth: 48
-
 		tcp_get_syncookie_mss (depth:2) File Path: net/ipv4/tcp_ipv4.c:1865 Stack Depth: 24
-
 			tcp_syn_flood_action (depth:3) File Path: net/ipv4/tcp_input.c:7082 Stack Depth: 40
-
 				net_ratelimit Stack Depth of this function is already explored: 144
 				_printk Stack Depth of this function is already explored: 6656
 				_printk Stack Depth of this function is already explored: 6656
 		__cookie_v4_init_sequence (depth:2) File Path: net/ipv4/tcp_ipv4.c:1868 Stack Depth: 72
-
 			__do_once_start Stack Depth of this function is already explored: 40
 			get_random_bytes Stack Depth of this function is already explored: 312
 			__do_once_done Stack Depth of this function is already explored: 872
@@ -22,10 +17,8 @@ bpf_tcp_gen_syncookie (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/tes
 			__do_once_done Stack Depth of this function is already explored: 872
 			siphash_2u64 Stack Depth of this function is already explored: 0
 	tcp_v6_get_syncookie (depth:1) File Path: net/core/filter.c:7404 Stack Depth: 48
-
 		tcp_get_syncookie_mss Stack Depth of this function is already explored: 6720
 		__cookie_v6_init_sequence (depth:2) File Path: net/ipv6/tcp_ipv6.c:1309 Stack Depth: 120
-
 			__do_once_start Stack Depth of this function is already explored: 40
 			get_random_bytes Stack Depth of this function is already explored: 312
 			__do_once_done Stack Depth of this function is already explored: 872

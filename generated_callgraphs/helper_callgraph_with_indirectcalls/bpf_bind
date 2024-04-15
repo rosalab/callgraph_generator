@@ -1,0 +1,7 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_bind
+bpf_bind (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
+	__inet_bind Stack Depth of this function is already explored: 13080
+	*(indirect-calls): net/core/filter.c:5747 (depth:0) Targets for indirect calls are not found in TyPM Analysis
+Maximum Stack Depth Used by the helper bpf_bind is: 13080
+-----------------------------------------

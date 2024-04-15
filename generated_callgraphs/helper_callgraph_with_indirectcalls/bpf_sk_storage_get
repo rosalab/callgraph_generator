@@ -1,0 +1,10 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_sk_storage_get
+bpf_sk_storage_get (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 48
+	__bpf_local_storage_insert_cache Stack Depth of this function is already explored: 56
+	refcount_warn_saturate Stack Depth of this function is already explored: 1008
+	bpf_local_storage_update Stack Depth of this function is already explored: 13120
+	refcount_warn_saturate Stack Depth of this function is already explored: 1008
+	sk_free Stack Depth of this function is already explored: 8400
+Maximum Stack Depth Used by the helper bpf_sk_storage_get is: 13168
+-----------------------------------------

@@ -1,0 +1,6 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_ktime_get_ns
+bpf_ktime_get_ns (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
+	ktime_get_mono_fast_ns Stack Depth of this function is already explored: 40
+Maximum Stack Depth Used by the helper bpf_ktime_get_ns is: 40
+-----------------------------------------

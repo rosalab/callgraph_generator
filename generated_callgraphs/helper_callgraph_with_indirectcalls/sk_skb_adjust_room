@@ -1,0 +1,7 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: sk_skb_adjust_room
+sk_skb_adjust_room (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: -1
+	pskb_expand_head Stack Depth of this function is already explored: 1840
+	__pskb_pull_tail Stack Depth of this function is already explored: 1912
+Maximum Stack Depth Used by the helper sk_skb_adjust_room is: 1912
+-----------------------------------------

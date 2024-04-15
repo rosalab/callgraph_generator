@@ -1,0 +1,9 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_get_stackid_pe
+bpf_get_stackid_pe (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 32
+	get_perf_callchain Stack Depth of this function is already explored: 1200
+	__bpf_get_stackid Stack Depth of this function is already explored: 2288
+	__bpf_get_stackid Stack Depth of this function is already explored: 2288
+	__bpf_get_stackid Stack Depth of this function is already explored: 2288
+Maximum Stack Depth Used by the helper bpf_get_stackid_pe is: 2320
+-----------------------------------------

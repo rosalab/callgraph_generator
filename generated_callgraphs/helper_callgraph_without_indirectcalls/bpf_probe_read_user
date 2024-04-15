@@ -1,9 +1,7 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_probe_read_user
 bpf_probe_read_user (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 24
-
 	copy_from_user_nofault (depth:1) File Path: kernel/trace/bpf_trace.c:179 Stack Depth: 32
-
 		nmi_uaccess_okay Stack Depth of this function is already explored: 0
 Maximum Stack Depth Used by the helper bpf_probe_read_user is: 56
 -----------------------------------------

@@ -1,0 +1,4 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_lwt_seg6_store_bytes
+Maximum Stack Depth Used by the helper bpf_lwt_seg6_store_bytes is: 0
+-----------------------------------------

@@ -1,0 +1,7 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_sysctl_get_name
+bpf_sysctl_get_name (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 40
+	sysctl_cpy_dir Stack Depth of this function is already explored: 40
+	sized_strscpy Stack Depth of this function is already explored: 8
+Maximum Stack Depth Used by the helper bpf_sysctl_get_name is: 80
+-----------------------------------------

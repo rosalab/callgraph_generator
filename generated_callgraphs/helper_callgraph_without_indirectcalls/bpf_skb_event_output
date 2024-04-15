@@ -1,7 +1,6 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_skb_event_output
 bpf_skb_event_output (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
-
 	bpf_event_output Stack Depth of this function is already explored: 7360
 Maximum Stack Depth Used by the helper bpf_skb_event_output is: 7360
 -----------------------------------------

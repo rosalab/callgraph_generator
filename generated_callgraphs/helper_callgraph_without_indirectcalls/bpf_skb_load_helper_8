@@ -1,9 +1,7 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_skb_load_helper_8
 bpf_skb_load_helper_8 (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 16
-
 	skb_copy_bits Stack Depth of this function is already explored: 72
 	bpf_internal_load_pointer_neg_helper (depth:1) File Path: net/core/filter.c:229 Stack Depth: 0
-
 Maximum Stack Depth Used by the helper bpf_skb_load_helper_8 is: 88
 -----------------------------------------

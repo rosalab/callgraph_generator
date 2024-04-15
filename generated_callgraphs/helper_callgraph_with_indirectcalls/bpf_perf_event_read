@@ -1,0 +1,6 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_perf_event_read
+bpf_perf_event_read (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 16
+	perf_event_read_local Stack Depth of this function is already explored: 7000
+Maximum Stack Depth Used by the helper bpf_perf_event_read is: 7016
+-----------------------------------------

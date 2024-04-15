@@ -1,0 +1,8 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_seq_printf_btf
+bpf_seq_printf_btf (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 48
+	bpf_get_btf_vmlinux Stack Depth of this function is already explored: 0
+	btf_type_by_id Stack Depth of this function is already explored: 0
+	btf_type_seq_show_flags Stack Depth of this function is already explored: 0
+Maximum Stack Depth Used by the helper bpf_seq_printf_btf is: 48
+-----------------------------------------

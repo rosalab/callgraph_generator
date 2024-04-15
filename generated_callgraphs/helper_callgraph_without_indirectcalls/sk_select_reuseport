@@ -1,7 +1,6 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: sk_select_reuseport
 sk_select_reuseport (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 16
-
 *(indirect-calls): net/core/filter.c:11172 (depth:0) Targets for indirect calls are not found in TyPM Analysis
 	refcount_warn_saturate Stack Depth of this function is already explored: 6760
 	sk_free Stack Depth of this function is already explored: 2680

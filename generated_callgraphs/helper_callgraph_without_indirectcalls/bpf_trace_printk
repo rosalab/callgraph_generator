@@ -1,12 +1,9 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_trace_printk
 bpf_trace_printk (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 88
-
 	bpf_bprintf_prepare Stack Depth of this function is already explored: 88
 	bstr_printf Stack Depth of this function is already explored: 224
-	__SCT__tp_func_bpf_trace_printk (depth:1) File Path: kernel/trace/./bpf_trace.h:11 Stack Depth: -1
- Function Not Found 
+	__SCT__tp_func_bpf_trace_printk (depth:1) File Path: kernel/trace/./bpf_trace.h:11 Stack Depth: -1 Function Not Found 
 	bpf_bprintf_cleanup (depth:1) File Path: kernel/trace/bpf_trace.c:394 Stack Depth: 0
-
 Maximum Stack Depth Used by the helper bpf_trace_printk is: 312
 -----------------------------------------

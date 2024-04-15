@@ -1,17 +1,14 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_cgrp_storage_delete
 bpf_cgrp_storage_delete (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 24
-
 	migrate_disable Stack Depth of this function is already explored: 0
 	bpf_selem_unlink (depth:1) File Path: kernel/bpf/bpf_cgrp_storage.c:124 Stack Depth: 56
-
 		_raw_spin_lock_irqsave Stack Depth of this function is already explored: 24
 		_raw_spin_unlock_irqrestore Stack Depth of this function is already explored: 0
 		_raw_spin_lock_irqsave Stack Depth of this function is already explored: 24
 		bpf_selem_unlink_storage_nolock Stack Depth of this function is already explored: 2544
 		_raw_spin_unlock_irqrestore Stack Depth of this function is already explored: 0
 		bpf_local_storage_free (depth:2) File Path: kernel/bpf/bpf_local_storage.c:367 Stack Depth: 16
-
 			kvfree_call_rcu Stack Depth of this function is already explored: 5936
 			call_rcu_tasks_trace Stack Depth of this function is already explored: 216
 			call_rcu_tasks_trace Stack Depth of this function is already explored: 216

@@ -1,0 +1,7 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_snprintf
+bpf_snprintf (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 56
+	bpf_bprintf_prepare Stack Depth of this function is already explored: 584
+	bstr_printf Stack Depth of this function is already explored: 1096
+Maximum Stack Depth Used by the helper bpf_snprintf is: 1152
+-----------------------------------------

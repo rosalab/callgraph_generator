@@ -1,7 +1,6 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_skb_adjust_room
 bpf_skb_adjust_room (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 80
-
 	pskb_expand_head Stack Depth of this function is already explored: 1048
 	bpf_skb_net_hdr_pop Stack Depth of this function is already explored: 1160
 	pskb_expand_head Stack Depth of this function is already explored: 1048

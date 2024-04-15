@@ -1,7 +1,6 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_task_storage_get
 bpf_task_storage_get (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 48
-
 	migrate_disable Stack Depth of this function is already explored: 0
 	__bpf_local_storage_insert_cache Stack Depth of this function is already explored: 56
 	bpf_local_storage_update Stack Depth of this function is already explored: 6992

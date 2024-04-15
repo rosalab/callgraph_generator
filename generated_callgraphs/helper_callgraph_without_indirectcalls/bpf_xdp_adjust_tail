@@ -1,16 +1,12 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_xdp_adjust_tail
 bpf_xdp_adjust_tail (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 16
-
 	bpf_xdp_frags_shrink_tail (depth:1) File Path: net/core/filter.c:4175 Stack Depth: 56
-
 		__xdp_return (depth:2) File Path: net/core/filter.c:0 Stack Depth: 0
-
 			page_pool_put_unrefed_page Stack Depth of this function is already explored: 256
 			page_frag_free Stack Depth of this function is already explored: 136
 			__folio_put Stack Depth of this function is already explored: 200
 			__warn_printk Stack Depth of this function is already explored: 6760
 	bpf_xdp_frags_increase_tail (depth:1) File Path: net/core/filter.c:4177 Stack Depth: 48
-
 Maximum Stack Depth Used by the helper bpf_xdp_adjust_tail is: 6832
 -----------------------------------------

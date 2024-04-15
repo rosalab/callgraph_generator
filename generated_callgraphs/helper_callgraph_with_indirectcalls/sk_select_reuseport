@@ -1,0 +1,24 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: sk_select_reuseport
+sk_select_reuseport (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 16
+	bpf_fd_inode_storage_lookup_elem Stack Depth of this function is already explored: 3008
+	sock_map_lookup Stack Depth of this function is already explored: 1024
+	bpf_cgrp_storage_lookup_elem Stack Depth of this function is already explored: 12968
+	htab_of_map_lookup_elem Stack Depth of this function is already explored: 64
+	htab_map_lookup_elem Stack Depth of this function is already explored: 64
+	htab_lru_percpu_map_lookup_elem Stack Depth of this function is already explored: 64
+	sock_hash_lookup Stack Depth of this function is already explored: 1048
+	htab_percpu_map_lookup_elem Stack Depth of this function is already explored: 64
+	htab_lru_map_lookup_elem_sys Stack Depth of this function is already explored: 64
+	trie_lookup_elem Stack Depth of this function is already explored: 64
+	htab_lru_map_lookup_elem Stack Depth of this function is already explored: 64
+	bpf_fd_sk_storage_lookup_elem Stack Depth of this function is already explored: 3008
+	bpf_pid_task_storage_lookup_elem Stack Depth of this function is already explored: 12984
+	cgroup_storage_lookup_elem Stack Depth of this function is already explored: 56
+	sock_map_lookup_sys Stack Depth of this function is already explored: 8
+	sock_hash_lookup_sys Stack Depth of this function is already explored: 40
+	__htab_map_lookup_elem Stack Depth of this function is already explored: 48
+	refcount_warn_saturate Stack Depth of this function is already explored: 1008
+	sk_free Stack Depth of this function is already explored: 8400
+Maximum Stack Depth Used by the helper sk_select_reuseport is: 13000
+-----------------------------------------

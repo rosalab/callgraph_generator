@@ -1,0 +1,6 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_ktime_get_coarse_ns
+bpf_ktime_get_coarse_ns (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 24
+	ktime_get_coarse_ts64 Stack Depth of this function is already explored: 16
+Maximum Stack Depth Used by the helper bpf_ktime_get_coarse_ns is: 40
+-----------------------------------------

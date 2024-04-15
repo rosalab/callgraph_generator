@@ -1,0 +1,9 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_skb_change_proto
+bpf_skb_change_proto (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 32
+	pskb_expand_head Stack Depth of this function is already explored: 1840
+	skb_push Stack Depth of this function is already explored: 912
+	pskb_expand_head Stack Depth of this function is already explored: 1840
+	bpf_skb_net_hdr_pop Stack Depth of this function is already explored: 1968
+Maximum Stack Depth Used by the helper bpf_skb_change_proto is: 2000
+-----------------------------------------

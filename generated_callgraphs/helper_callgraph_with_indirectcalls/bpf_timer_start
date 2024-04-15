@@ -1,0 +1,6 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_timer_start
+bpf_timer_start (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 56
+	hrtimer_start_range_ns Stack Depth of this function is already explored: 1184
+Maximum Stack Depth Used by the helper bpf_timer_start is: 1240
+-----------------------------------------

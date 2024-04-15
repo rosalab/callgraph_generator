@@ -1,0 +1,21 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_map_update_elem
+bpf_map_update_elem (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
+	sock_map_update_elem Stack Depth of this function is already explored: 13088
+	bpf_fd_inode_storage_update_elem Stack Depth of this function is already explored: 13168
+	htab_map_update_elem Stack Depth of this function is already explored: 8240
+	htab_lru_map_update_elem Stack Depth of this function is already explored: 8360
+	array_map_update_elem Stack Depth of this function is already explored: 8272
+	htab_lru_percpu_map_update_elem Stack Depth of this function is already explored: 8480
+	bpf_struct_ops_map_update_elem Stack Depth of this function is already explored: 12544
+	dev_map_hash_update_elem Stack Depth of this function is already explored: 12544
+	bpf_cgrp_storage_update_elem Stack Depth of this function is already explored: 13152
+	htab_percpu_map_update_elem Stack Depth of this function is already explored: 304
+	bpf_fd_sk_storage_update_elem Stack Depth of this function is already explored: 13168
+	trie_update_elem Stack Depth of this function is already explored: 12512
+	dev_map_update_elem Stack Depth of this function is already explored: 12512
+	bpf_pid_task_storage_update_elem Stack Depth of this function is already explored: 13176
+	cpu_map_update_elem Stack Depth of this function is already explored: 12936
+	cgroup_storage_update_elem Stack Depth of this function is already explored: 9936
+Maximum Stack Depth Used by the helper bpf_map_update_elem is: 13176
+-----------------------------------------

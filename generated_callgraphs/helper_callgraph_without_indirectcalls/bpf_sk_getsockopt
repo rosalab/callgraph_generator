@@ -1,75 +1,55 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_sk_getsockopt
 bpf_sk_getsockopt (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
-
 	__bpf_getsockopt (depth:1) File Path: net/core/filter.c:5467 Stack Depth: 56
-
 		sk_getsockopt (depth:2) File Path: net/core/filter.c:5191 Stack Depth: -1
-
 			_copy_from_user Stack Depth of this function is already explored: 8
 			_raw_spin_lock Stack Depth of this function is already explored: 0
 			pid_vnr (depth:3) File Path: net/core/sock.c:1568 Stack Depth: 0
-
 			_raw_spin_unlock Stack Depth of this function is already explored: 0
 			copy_to_sockptr (depth:3) File Path: net/core/sock.c:1761 Stack Depth: 0
-
 				__copy_overflow Stack Depth of this function is already explored: 6760
 				__bad_copy_from Stack Depth of this function is already explored: 0
 				_copy_to_user Stack Depth of this function is already explored: 0
 			_raw_spin_lock Stack Depth of this function is already explored: 0
 			get_pid.75835 (depth:3) File Path: net/core/sock.c:1776 Stack Depth: 8
-
 				refcount_warn_saturate Stack Depth of this function is already explored: 6760
 			_raw_spin_unlock Stack Depth of this function is already explored: 0
 			pidfd_prepare (depth:3) File Path: net/core/sock.c:1782 Stack Depth: 32
-
 				get_unused_fd_flags Stack Depth of this function is already explored: 6720
 				pidfs_alloc_file (depth:4) File Path: kernel/fork.c:2028 Stack Depth: 56
-
 					refcount_warn_saturate Stack Depth of this function is already explored: 6760
 					path_from_stashed Stack Depth of this function is already explored: 6872
 					dentry_open (depth:5) File Path: fs/pidfs.c:273 Stack Depth: 24
-
 						alloc_empty_file Stack Depth of this function is already explored: 6696
 						do_dentry_open (depth:6) File Path: fs/open.c:1089 Stack Depth: 48
-
 							path_get Stack Depth of this function is already explored: 16
 							errseq_sample Stack Depth of this function is already explored: 0
 							errseq_sample Stack Depth of this function is already explored: 0
 							mnt_get_write_access Stack Depth of this function is already explored: 0
 							backing_file_user_path (depth:7) File Path: fs/open.c:891 Stack Depth: 0
-
 							mnt_get_write_access Stack Depth of this function is already explored: 0
 							mnt_put_write_access Stack Depth of this function is already explored: 0
 							try_module_get Stack Depth of this function is already explored: 0
 							security_file_open (depth:7) File Path: fs/open.c:942 Stack Depth: 16
-
 							*(indirect-calls): security/security.c:2961 (depth:7) Targets for indirect calls are not found in TyPM Analysis
 							__break_lease (depth:7) File Path: ./include/linux/filelock.h:431 Stack Depth: -1
-
 								kmem_cache_alloc Stack Depth of this function is already explored: 848
 								__init_waitqueue_head Stack Depth of this function is already explored: 0
 								__SCT__might_resched Stack Depth of this function is already explored: 0
 								__percpu_down_read Stack Depth of this function is already explored: 3072
 								_raw_spin_lock Stack Depth of this function is already explored: 0
 								time_out_leases (depth:8) File Path: fs/locks.c:1566 Stack Depth: 64
-
-									__SCT__tp_func_time_out_leases (depth:9) File Path: ./include/trace/events/filelock.h:168 Stack Depth: -1
- Function Not Found 
+									__SCT__tp_func_time_out_leases (depth:9) File Path: ./include/trace/events/filelock.h:168 Stack Depth: -1 Function Not Found 
 									locks_wake_up_blocks Stack Depth of this function is already explored: 112
 									locks_wake_up_blocks Stack Depth of this function is already explored: 112
 									f_delown (depth:9) File Path: fs/locks.c:1453 Stack Depth: 16
-
 										_raw_write_lock_irq (depth:10) File Path: fs/fcntl.c:93 Stack Depth: 0
-
 											queued_write_lock_slowpath Stack Depth of this function is already explored: 16
 										put_pid Stack Depth of this function is already explored: 1184
 										_raw_write_unlock_irq (depth:10) File Path: fs/fcntl.c:105 Stack Depth: 0
-
 									fasync_helper (depth:9) File Path: fs/locks.c:1455 Stack Depth: 32
-
 										fasync_remove_entry (depth:10) File Path: fs/fcntl.c:988 Stack Depth: 40
-
 											_raw_spin_lock Stack Depth of this function is already explored: 0
 											_raw_spin_lock Stack Depth of this function is already explored: 0
 											_raw_write_lock_irq Stack Depth of this function is already explored: 16
@@ -79,7 +59,6 @@ bpf_sk_getsockopt (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_ke
 											_raw_spin_unlock Stack Depth of this function is already explored: 0
 										kmem_cache_alloc Stack Depth of this function is already explored: 848
 										fasync_insert_entry (depth:10) File Path: fs/fcntl.c:971 Stack Depth: 48
-
 											_raw_spin_lock Stack Depth of this function is already explored: 0
 											_raw_spin_lock Stack Depth of this function is already explored: 0
 											_raw_write_lock_irq Stack Depth of this function is already explored: 16
@@ -89,29 +68,24 @@ bpf_sk_getsockopt (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_ke
 										kmem_cache_free Stack Depth of this function is already explored: 816
 									_printk Stack Depth of this function is already explored: 6656
 									locks_delete_lock_ctx (depth:9) File Path: fs/locks.c:1460 Stack Depth: 24
-
 										_raw_spin_lock Stack Depth of this function is already explored: 0
 										_raw_spin_unlock Stack Depth of this function is already explored: 0
 										locks_wake_up_blocks Stack Depth of this function is already explored: 112
 										locks_release_private Stack Depth of this function is already explored: 8
 										kmem_cache_free Stack Depth of this function is already explored: 816
 								leases_conflict (depth:8) File Path: fs/locks.c:1523 Stack Depth: 24
-
 								*(indirect-calls): fs/locks.c:1497 (depth:8) Targets for indirect calls are not found in TyPM Analysis
-									__SCT__tp_func_leases_conflict (depth:9) File Path: ./include/trace/events/filelock.h:206 Stack Depth: -1
- Function Not Found 
+									__SCT__tp_func_leases_conflict (depth:9) File Path: ./include/trace/events/filelock.h:206 Stack Depth: -1 Function Not Found 
 								leases_conflict Stack Depth of this function is already explored: 24
 								*(indirect-calls): fs/locks.c:1592 (depth:7) Targets for indirect calls are not found in TyPM Analysis
 								_raw_spin_lock Stack Depth of this function is already explored: 0
 								_raw_spin_unlock Stack Depth of this function is already explored: 0
 								locks_wake_up_blocks Stack Depth of this function is already explored: 112
-								__SCT__tp_func_break_lease_noblock (depth:8) File Path: ./include/trace/events/filelock.h:156 Stack Depth: -1
- Function Not Found 
+								__SCT__tp_func_break_lease_noblock (depth:8) File Path: ./include/trace/events/filelock.h:156 Stack Depth: -1 Function Not Found 
 								_raw_spin_lock Stack Depth of this function is already explored: 0
 								__locks_insert_block Stack Depth of this function is already explored: 152
 								_raw_spin_unlock Stack Depth of this function is already explored: 0
-								__SCT__tp_func_break_lease_block (depth:8) File Path: ./include/trace/events/filelock.h:159 Stack Depth: -1
- Function Not Found 
+								__SCT__tp_func_break_lease_block (depth:8) File Path: ./include/trace/events/filelock.h:159 Stack Depth: -1 Function Not Found 
 								_raw_spin_unlock Stack Depth of this function is already explored: 0
 								rcuwait_wake_up Stack Depth of this function is already explored: 8
 								locks_release_private Stack Depth of this function is already explored: 8
@@ -124,10 +98,8 @@ bpf_sk_getsockopt (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_ke
 								__SCT__might_resched Stack Depth of this function is already explored: 0
 								__percpu_down_read Stack Depth of this function is already explored: 3072
 								_raw_spin_lock Stack Depth of this function is already explored: 0
-								__SCT__tp_func_break_lease_unblock (depth:8) File Path: ./include/trace/events/filelock.h:162 Stack Depth: -1
- Function Not Found 
+								__SCT__tp_func_break_lease_unblock (depth:8) File Path: ./include/trace/events/filelock.h:162 Stack Depth: -1 Function Not Found 
 								__locks_delete_block (depth:8) File Path: fs/locks.c:1625 Stack Depth: 32
-
 									_raw_spin_lock Stack Depth of this function is already explored: 0
 									*(indirect-calls): fs/locks.c:713 (depth:8) Targets for indirect calls are not found in TyPM Analysis
 									__wake_up Stack Depth of this function is already explored: 96
@@ -141,23 +113,18 @@ bpf_sk_getsockopt (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_ke
 								kmem_cache_free Stack Depth of this function is already explored: 816
 							*(indirect-calls): fs/open.c:955 (depth:6) Targets for indirect calls are not found in TyPM Analysis
 							file_ra_state_init (depth:7) File Path: fs/open.c:974 Stack Depth: 8
-
 								inode_to_bdi Stack Depth of this function is already explored: 0
 							__fsnotify_parent (depth:7) File Path: ./include/linux/fsnotify.h:83 Stack Depth: -1
-
 								fsnotify_event_needs_parent (depth:8) File Path: fs/notify/fsnotify.c:208 Stack Depth: 0
-
 								fsnotify_event_needs_parent Stack Depth of this function is already explored: 0
 								dget_parent Stack Depth of this function is already explored: 6192
 								__fsnotify_update_child_dentry_flags Stack Depth of this function is already explored: 56
 								fsnotify Stack Depth of this function is already explored: 0
 								take_dentry_name_snapshot (depth:8) File Path: fs/notify/fsnotify.c:229 Stack Depth: 32
-
 									_raw_spin_lock Stack Depth of this function is already explored: 0
 									_raw_spin_unlock Stack Depth of this function is already explored: 0
 								fsnotify Stack Depth of this function is already explored: 0
 								release_dentry_name_snapshot (depth:8) File Path: fs/notify/fsnotify.c:239 Stack Depth: 0
-
 									kvfree_call_rcu Stack Depth of this function is already explored: 5936
 								dput Stack Depth of this function is already explored: 1952
 							fsnotify Stack Depth of this function is already explored: 0
@@ -176,24 +143,19 @@ bpf_sk_getsockopt (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_ke
 			fput Stack Depth of this function is already explored: 2088
 			fd_install Stack Depth of this function is already explored: 32
 			sk_get_peer_cred (depth:3) File Path: net/core/sock.c:1804 Stack Depth: 16
-
 				_raw_spin_lock Stack Depth of this function is already explored: 0
 				_raw_spin_unlock Stack Depth of this function is already explored: 0
 			__put_cred Stack Depth of this function is already explored: 1384
 			copy_to_sockptr Stack Depth of this function is already explored: 6760
 			groups_to_user (depth:3) File Path: net/core/sock.c:1816 Stack Depth: 56
-
 				_copy_to_user Stack Depth of this function is already explored: 0
 			__put_cred Stack Depth of this function is already explored: 1384
 			*(indirect-calls): net/core/sock.c:1827 (depth:2) Targets for indirect calls are not found in TyPM Analysis
 			copy_to_sockptr Stack Depth of this function is already explored: 6760
 			security_socket_getpeersec_stream (depth:3) File Path: net/core/sock.c:1849 Stack Depth: 56
-
 			*(indirect-calls): security/security.c:4624 (depth:3) Targets for indirect calls are not found in TyPM Analysis
 			sock_getbindtodevice (depth:3) File Path: net/core/sock.c:1879 Stack Depth: 88
-
 				netdev_get_name (depth:4) File Path: net/core/sock.c:737 Stack Depth: 24
-
 					down_read Stack Depth of this function is already explored: 160
 					__rcu_read_lock Stack Depth of this function is already explored: 0
 					strcpy Stack Depth of this function is already explored: 0
@@ -205,7 +167,6 @@ bpf_sk_getsockopt (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_ke
 				_copy_to_user Stack Depth of this function is already explored: 0
 				_copy_to_user Stack Depth of this function is already explored: 0
 			sk_get_filter (depth:3) File Path: net/core/sock.c:1882 Stack Depth: 48
-
 				sockopt_lock_sock Stack Depth of this function is already explored: 3040
 				__copy_overflow Stack Depth of this function is already explored: 6760
 				__bad_copy_from Stack Depth of this function is already explored: 0
@@ -213,7 +174,6 @@ bpf_sk_getsockopt (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_ke
 				sockopt_release_sock Stack Depth of this function is already explored: 8224
 			copy_to_sockptr Stack Depth of this function is already explored: 6760
 			sock_gen_cookie.75836 (depth:3) File Path: net/core/sock.c:1953 Stack Depth: 0
-
 				__sock_gen_cookie Stack Depth of this function is already explored: 0
 			__copy_overflow Stack Depth of this function is already explored: 6760
 			__bad_copy_from Stack Depth of this function is already explored: 0
@@ -221,13 +181,10 @@ bpf_sk_getsockopt (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_ke
 			_copy_to_user Stack Depth of this function is already explored: 0
 		sol_tcp_sockopt Stack Depth of this function is already explored: 8408
 		do_ip_getsockopt (depth:2) File Path: net/core/filter.c:5373 Stack Depth: -1
-
 			ip_mroute_getsockopt (depth:3) File Path: net/ipv4/ip_sockglue.c:1519 Stack Depth: 48
-
 				_copy_from_user Stack Depth of this function is already explored: 8
 				_copy_to_user Stack Depth of this function is already explored: 0
 				copy_to_sockptr.76953 (depth:4) File Path: net/ipv4/ipmr.c:1613 Stack Depth: 0
-
 					__copy_overflow Stack Depth of this function is already explored: 6760
 					__bad_copy_from Stack Depth of this function is already explored: 0
 					_copy_to_user Stack Depth of this function is already explored: 0
@@ -236,21 +193,17 @@ bpf_sk_getsockopt (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_ke
 			__rcu_read_unlock Stack Depth of this function is already explored: 6160
 			__rcu_read_unlock Stack Depth of this function is already explored: 6160
 			copy_to_sockptr.77014 (depth:3) File Path: net/ipv4/ip_sockglue.c:1619 Stack Depth: 0
-
 				__copy_overflow Stack Depth of this function is already explored: 6760
 				__bad_copy_from Stack Depth of this function is already explored: 0
 				_copy_to_user Stack Depth of this function is already explored: 0
 			ip_options_undo (depth:3) File Path: net/ipv4/ip_sockglue.c:1622 Stack Depth: 16
-
 			copy_to_sockptr.77014 Stack Depth of this function is already explored: 6760
 			copy_to_sockptr.77014 Stack Depth of this function is already explored: 6760
 			sk_dst_get (depth:3) File Path: net/ipv4/ip_sockglue.c:1635 Stack Depth: 8
-
 				__rcu_read_lock Stack Depth of this function is already explored: 0
 				rcuref_get_slowpath Stack Depth of this function is already explored: 16
 				__rcu_read_unlock Stack Depth of this function is already explored: 6160
 			dst_mtu.77015 (depth:3) File Path: net/ipv4/ip_sockglue.c:1637 Stack Depth: 0
-
 				ip6_mtu Stack Depth of this function is already explored: 16
 				ipv4_mtu Stack Depth of this function is already explored: 0
 				*(indirect-calls): ./include/net/dst.h:216 (depth:3) Targets for indirect calls are not found in TyPM Analysis
@@ -265,7 +218,6 @@ bpf_sk_getsockopt (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_ke
 			sockopt_lock_sock Stack Depth of this function is already explored: 3040
 			copy_from_sockptr.77010 Stack Depth of this function is already explored: 6760
 			ip_mc_msfget (depth:3) File Path: net/ipv4/ip_sockglue.c:1718 Stack Depth: -1
-
 				rtnl_is_locked Stack Depth of this function is already explored: 0
 				__warn_printk Stack Depth of this function is already explored: 6760
 				__ip_dev_find Stack Depth of this function is already explored: 120
@@ -275,27 +227,22 @@ bpf_sk_getsockopt (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_ke
 				__bad_copy_from Stack Depth of this function is already explored: 0
 				_copy_to_user Stack Depth of this function is already explored: 0
 				copy_to_sockptr_offset (depth:4) File Path: net/ipv4/igmp.c:2586 Stack Depth: 0
-
 					__copy_overflow Stack Depth of this function is already explored: 6760
 					__bad_copy_from Stack Depth of this function is already explored: 0
 					_copy_to_user Stack Depth of this function is already explored: 0
 			compat_ip_get_mcast_msfilter (depth:3) File Path: net/ipv4/ip_sockglue.c:1723 Stack Depth: -1
-
 				_copy_from_user Stack Depth of this function is already explored: 8
 				ip_mc_gsfget (depth:4) File Path: net/ipv4/ip_sockglue.c:1491 Stack Depth: -1
-
 					rtnl_is_locked Stack Depth of this function is already explored: 0
 					__warn_printk Stack Depth of this function is already explored: 6760
 					_copy_to_user Stack Depth of this function is already explored: 0
 				_copy_to_user Stack Depth of this function is already explored: 0
 				_copy_to_user Stack Depth of this function is already explored: 0
 				copy_to_sockptr_offset.77016 (depth:4) File Path: net/ipv4/ip_sockglue.c:1501 Stack Depth: 0
-
 					__copy_overflow Stack Depth of this function is already explored: 6760
 					__bad_copy_from Stack Depth of this function is already explored: 0
 					_copy_to_user Stack Depth of this function is already explored: 0
 			ip_get_mcast_msfilter (depth:3) File Path: net/ipv4/ip_sockglue.c:1726 Stack Depth: -1
-
 				_copy_from_user Stack Depth of this function is already explored: 8
 				ip_mc_gsfget Stack Depth of this function is already explored: 6760
 				_copy_to_user Stack Depth of this function is already explored: 0

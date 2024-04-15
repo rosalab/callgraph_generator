@@ -1,72 +1,53 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_copy_from_user_task
 bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 32
-
 	access_process_vm (depth:1) File Path: kernel/bpf/helpers.c:690 Stack Depth: 40
-
 		get_task_mm (depth:2) File Path: mm/memory.c:6167 Stack Depth: 24
-
 			_raw_spin_lock Stack Depth of this function is already explored: 0
 			_raw_spin_unlock Stack Depth of this function is already explored: 0
 		__access_remote_vm (depth:2) File Path: mm/memory.c:6171 Stack Depth: 112
-
 			__mmap_lock_do_trace_start_locking Stack Depth of this function is already explored: 0
 			down_read_killable Stack Depth of this function is already explored: 184
 			__mmap_lock_do_trace_acquire_returned Stack Depth of this function is already explored: 0
 			mtree_load Stack Depth of this function is already explored: 88
 			expand_stack (depth:3) File Path: mm/memory.c:6075 Stack Depth: 112
-
 				__mmap_lock_do_trace_released Stack Depth of this function is already explored: 0
 				up_read Stack Depth of this function is already explored: 112
 				__mmap_lock_do_trace_start_locking Stack Depth of this function is already explored: 0
 				down_write_killable (depth:4) File Path: ./include/linux/mmap_lock.h:124 Stack Depth: 8
-
 					__SCT__might_resched Stack Depth of this function is already explored: 0
 					rwsem_down_write_slowpath Stack Depth of this function is already explored: 64
 				__mmap_lock_do_trace_acquire_returned Stack Depth of this function is already explored: 0
 				mas_walk Stack Depth of this function is already explored: 72
 				mas_prev Stack Depth of this function is already explored: 144
 				mas_next (depth:4) File Path: mm/mmap.c:1920 Stack Depth: 32
-
 					mas_next_setup (depth:5) File Path: lib/maple_tree.c:5756 Stack Depth: 24
-
 						mas_walk Stack Depth of this function is already explored: 72
 						mas_walk Stack Depth of this function is already explored: 72
 					mas_next_slot Stack Depth of this function is already explored: 112
 				expand_downwards (depth:4) File Path: mm/mmap.c:2259 Stack Depth: -1
-
 					mas_prev Stack Depth of this function is already explored: 144
 					mas_next_range (depth:5) File Path: mm/mmap.c:2092 Stack Depth: 32
-
 						mas_next_setup Stack Depth of this function is already explored: 96
 						mas_next_slot Stack Depth of this function is already explored: 112
 					mas_preallocate (depth:5) File Path: mm/mmap.c:2095 Stack Depth: -1
-
 						mas_wr_walk (depth:6) File Path: lib/maple_tree.c:5516 Stack Depth: 16
-
 							mas_wr_walk_descend (depth:7) File Path: lib/maple_tree.c:3597 Stack Depth: 0
-
-							__SCT__tp_func_ma_write (depth:7) File Path: ./include/trace/events/maple_tree.h:80 Stack Depth: -1
- Function Not Found 
+							__SCT__tp_func_ma_write (depth:7) File Path: ./include/trace/events/maple_tree.h:80 Stack Depth: -1 Function Not Found 
 						mas_alloc_nodes (depth:6) File Path: lib/maple_tree.c:1322 Stack Depth: 56
-
 							kmem_cache_alloc Stack Depth of this function is already explored: 848
 							kmem_cache_alloc Stack Depth of this function is already explored: 848
 							kmem_cache_alloc_bulk Stack Depth of this function is already explored: 904
 						mas_destroy (depth:6) File Path: lib/maple_tree.c:5564 Stack Depth: -1
-
 							mtree_range_walk Stack Depth of this function is already explored: 48
 							mas_ascend Stack Depth of this function is already explored: 24
 							mas_alloc_nodes Stack Depth of this function is already explored: 960
 							mas_leaf_max_gap (depth:7) File Path: lib/maple_tree.c:3116 Stack Depth: 8
-
 							mas_leaf_max_gap Stack Depth of this function is already explored: 8
 							mas_ascend Stack Depth of this function is already explored: 24
 							mas_replace_node (depth:7) File Path: lib/maple_tree.c:3123 Stack Depth: 0
-
 								call_rcu Stack Depth of this function is already explored: 240
 							mas_update_gap (depth:7) File Path: lib/maple_tree.c:3127 Stack Depth: 32
-
 								mas_leaf_max_gap Stack Depth of this function is already explored: 8
 							kmem_cache_free_bulk Stack Depth of this function is already explored: 768
 							kmem_cache_free Stack Depth of this function is already explored: 816
@@ -77,42 +58,30 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 					_printk Stack Depth of this function is already explored: 6656
 					capable Stack Depth of this function is already explored: 6664
 					security_vm_enough_memory_mm (depth:5) File Path: mm/mmap.c:1957 Stack Depth: 24
-
 					*(indirect-calls): security/security.c:1125 (depth:5) Targets for indirect calls are not found in TyPM Analysis
 						__vm_enough_memory (depth:6) File Path: security/security.c:1131 Stack Depth: 32
-
 							percpu_counter_add_batch Stack Depth of this function is already explored: 48
 							hugetlb_total_pages (depth:7) File Path: mm/util.c:911 Stack Depth: 0
-
 							___ratelimit Stack Depth of this function is already explored: 144
 							_printk Stack Depth of this function is already explored: 6656
 							percpu_counter_add_batch Stack Depth of this function is already explored: 48
 					_raw_spin_lock Stack Depth of this function is already explored: 0
 					vm_stat_account (depth:5) File Path: mm/mmap.c:2136 Stack Depth: 0
-
 					anon_vma_interval_tree_remove (depth:5) File Path: mm/mmap.c:355 Stack Depth: 32
-
 						rb_next Stack Depth of this function is already explored: 0
 						__rb_erase_color Stack Depth of this function is already explored: 40
 					mas_store_prealloc (depth:5) File Path: mm/mmap.c:2141 Stack Depth: 96
-
 						__SCT__tp_func_ma_write Stack Depth of this function is already explored: 0
 						mas_wr_store_entry (depth:6) File Path: lib/maple_tree.c:5485 Stack Depth: 16
-
 							mas_root_expand (depth:7) File Path: lib/maple_tree.c:3517 Stack Depth: 32
-
 								mas_alloc_nodes Stack Depth of this function is already explored: 960
 							mas_root_expand Stack Depth of this function is already explored: 992
 							mas_wr_walk Stack Depth of this function is already explored: 16
 							mas_wr_spanning_store (depth:7) File Path: lib/maple_tree.c:4217 Stack Depth: -1
-
-								__SCT__tp_func_ma_op (depth:8) File Path: ./include/trace/events/maple_tree.h:13 Stack Depth: -1
- Function Not Found 
+								__SCT__tp_func_ma_op (depth:8) File Path: ./include/trace/events/maple_tree.h:13 Stack Depth: -1 Function Not Found 
 								mas_new_root (depth:8) File Path: lib/maple_tree.c:3812 Stack Depth: 40
-
 									mas_alloc_nodes Stack Depth of this function is already explored: 960
 									mt_destroy_walk (depth:9) File Path: lib/maple_tree.c:5358 Stack Depth: 48
-
 										kmem_cache_free_bulk Stack Depth of this function is already explored: 768
 										kmem_cache_free_bulk Stack Depth of this function is already explored: 768
 										kmem_cache_free Stack Depth of this function is already explored: 816
@@ -121,25 +90,17 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 								mas_alloc_nodes Stack Depth of this function is already explored: 960
 								mas_new_root Stack Depth of this function is already explored: 1000
 								mas_store_b_node (depth:8) File Path: lib/maple_tree.c:3855 Stack Depth: 64
-
 									mas_mab_cp (depth:9) File Path: lib/maple_tree.c:2125 Stack Depth: 72
-
 								mas_mab_cp Stack Depth of this function is already explored: 72
 								mas_spanning_rebalance (depth:8) File Path: lib/maple_tree.c:3870 Stack Depth: -1
-
 									mast_spanning_rebalance (depth:9) File Path: lib/maple_tree.c:2853 Stack Depth: -1
-
 										mas_ascend Stack Depth of this function is already explored: 24
 										mas_ascend Stack Depth of this function is already explored: 24
 									mab_calc_split (depth:9) File Path: lib/maple_tree.c:2382 Stack Depth: 16
-
 										mab_no_null_split (depth:10) File Path: lib/maple_tree.c:1908 Stack Depth: 0
-
 									mab_mas_cp (depth:9) File Path: lib/maple_tree.c:2682 Stack Depth: 72
-
 									mab_mas_cp Stack Depth of this function is already explored: 72
 									mast_ascend (depth:9) File Path: lib/maple_tree.c:2889 Stack Depth: 24
-
 										mas_ascend Stack Depth of this function is already explored: 24
 										mas_ascend Stack Depth of this function is already explored: 24
 									mas_leaf_max_gap Stack Depth of this function is already explored: 8
@@ -149,9 +110,7 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 									mast_spanning_rebalance Stack Depth of this function is already explored: 24
 									mast_ascend Stack Depth of this function is already explored: 48
 									mas_wmb_replace (depth:9) File Path: lib/maple_tree.c:2943 Stack Depth: -1
-
 										mas_find_child (depth:10) File Path: lib/maple_tree.c:2569 Stack Depth: 0
-
 										call_rcu Stack Depth of this function is already explored: 240
 										mas_find_child Stack Depth of this function is already explored: 0
 										mas_find_child Stack Depth of this function is already explored: 0
@@ -163,10 +122,8 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 										mas_update_gap Stack Depth of this function is already explored: 40
 									mtree_range_walk Stack Depth of this function is already explored: 48
 							mas_wr_end_piv (depth:7) File Path: lib/maple_tree.c:4222 Stack Depth: 0
-
 							mas_new_root Stack Depth of this function is already explored: 1000
 							mas_wr_modify (depth:7) File Path: lib/maple_tree.c:4229 Stack Depth: -1
-
 								mas_update_gap Stack Depth of this function is already explored: 40
 								mas_update_gap Stack Depth of this function is already explored: 40
 								__SCT__tp_func_ma_write Stack Depth of this function is already explored: 0
@@ -181,23 +138,18 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 								__SCT__tp_func_ma_op Stack Depth of this function is already explored: 0
 								mas_alloc_nodes Stack Depth of this function is already explored: 960
 								mas_next_sibling (depth:8) File Path: lib/maple_tree.c:2990 Stack Depth: 88
-
 									mas_ascend Stack Depth of this function is already explored: 24
 								mas_ascend Stack Depth of this function is already explored: 24
 								mas_spanning_rebalance Stack Depth of this function is already explored: 864
 								__SCT__tp_func_ma_op Stack Depth of this function is already explored: 0
 								mas_alloc_nodes Stack Depth of this function is already explored: 960
 								mas_split_final_node (depth:8) File Path: lib/maple_tree.c:3357 Stack Depth: 72
-
 								mas_push_data (depth:8) File Path: lib/maple_tree.c:3372 Stack Depth: -1
-
 									mas_ascend Stack Depth of this function is already explored: 24
 									mas_next_sibling Stack Depth of this function is already explored: 112
 									mast_split_data (depth:9) File Path: lib/maple_tree.c:3301 Stack Depth: 88
-
 										mab_mas_cp Stack Depth of this function is already explored: 72
 									mast_fill_bnode (depth:9) File Path: lib/maple_tree.c:3302 Stack Depth: 64
-
 										mas_ascend Stack Depth of this function is already explored: 24
 										mas_leaf_max_gap Stack Depth of this function is already explored: 8
 										mas_leaf_max_gap Stack Depth of this function is already explored: 8
@@ -216,7 +168,6 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 					anon_vma_interval_tree_insert Stack Depth of this function is already explored: 32
 					_raw_spin_unlock Stack Depth of this function is already explored: 0
 					perf_event_mmap (depth:5) File Path: mm/mmap.c:2145 Stack Depth: -1
-
 						__rcu_read_lock Stack Depth of this function is already explored: 0
 						_raw_spin_lock_irqsave Stack Depth of this function is already explored: 24
 						_raw_spin_unlock_irqrestore Stack Depth of this function is already explored: 0
@@ -225,17 +176,13 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 						__rcu_read_unlock Stack Depth of this function is already explored: 6160
 						kmalloc_trace Stack Depth of this function is already explored: 848
 						file_path (depth:6) File Path: kernel/events/core.c:8748 Stack Depth: 0
-
 							d_path (depth:7) File Path: fs/open.c:1077 Stack Depth: 64
-
 							*(indirect-calls): fs/d_path.c:283 (depth:7) Targets for indirect calls are not found in TyPM Analysis
 								__rcu_read_lock Stack Depth of this function is already explored: 0
 								prepend (depth:8) File Path: fs/d_path.c:288 Stack Depth: 24
-
 									copy_from_kernel_nofault Stack Depth of this function is already explored: 24
 									copy_from_kernel_nofault Stack Depth of this function is already explored: 24
 								prepend_path (depth:8) File Path: fs/d_path.c:291 Stack Depth: 88
-
 									__rcu_read_lock Stack Depth of this function is already explored: 0
 									_raw_spin_lock Stack Depth of this function is already explored: 0
 									__rcu_read_lock Stack Depth of this function is already explored: 0
@@ -249,13 +196,10 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 								__rcu_read_unlock Stack Depth of this function is already explored: 6160
 						*(indirect-calls): kernel/events/core.c:8763 (depth:5) Targets for indirect calls are not found in TyPM Analysis
 						arch_vma_name (depth:6) File Path: kernel/events/core.c:8765 Stack Depth: 0
-
 						sized_strscpy Stack Depth of this function is already explored: 8
 						strlen Stack Depth of this function is already explored: 0
 						build_id_parse (depth:6) File Path: kernel/events/core.c:8804 Stack Depth: 104
-
 							pagecache_get_page (depth:7) File Path: ./include/linux/pagemap.h:707 Stack Depth: 8
-
 								__filemap_get_folio Stack Depth of this function is already explored: 1320
 							bcmp Stack Depth of this function is already explored: 0
 							strcmp Stack Depth of this function is already explored: 0
@@ -269,13 +213,11 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 				up_write Stack Depth of this function is already explored: 112
 				__mmap_lock_do_trace_acquire_returned Stack Depth of this function is already explored: 0
 				downgrade_write (depth:4) File Path: ./include/linux/mmap_lock.h:140 Stack Depth: 48
-
 					_raw_spin_lock_irqsave Stack Depth of this function is already explored: 24
 					rwsem_mark_wake Stack Depth of this function is already explored: 64
 					_raw_spin_unlock_irqrestore Stack Depth of this function is already explored: 0
 					wake_up_q Stack Depth of this function is already explored: 24
 			get_user_pages_remote (depth:3) File Path: ./include/linux/mm.h:2484 Stack Depth: 112
-
 				is_valid_gup_args Stack Depth of this function is already explored: 0
 				__mmap_lock_do_trace_start_locking Stack Depth of this function is already explored: 0
 				down_read_killable Stack Depth of this function is already explored: 184
@@ -289,13 +231,11 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 				up_read Stack Depth of this function is already explored: 112
 			mtree_load Stack Depth of this function is already explored: 88
 			put_page.70372 (depth:3) File Path: ./include/linux/mm.h:2491 Stack Depth: 0
-
 				__folio_put Stack Depth of this function is already explored: 200
 			mtree_load Stack Depth of this function is already explored: 88
 			expand_stack Stack Depth of this function is already explored: 6824
 			*(indirect-calls): mm/memory.c:6107 (depth:2) Targets for indirect calls are not found in TyPM Analysis
 			set_page_dirty_lock (depth:3) File Path: mm/memory.c:6122 Stack Depth: 16
-
 				__SCT__might_resched Stack Depth of this function is already explored: 0
 				__folio_lock Stack Depth of this function is already explored: 1232
 				set_page_dirty Stack Depth of this function is already explored: 8
@@ -304,12 +244,9 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 			__mmap_lock_do_trace_released Stack Depth of this function is already explored: 0
 			up_read Stack Depth of this function is already explored: 112
 		mmput (depth:2) File Path: mm/memory.c:6173 Stack Depth: 8
-
 			__SCT__might_resched Stack Depth of this function is already explored: 0
 			__mmput (depth:3) File Path: kernel/fork.c:1367 Stack Depth: 8
-
 				uprobe_clear_state (depth:4) File Path: kernel/fork.c:1341 Stack Depth: 48
-
 					mutex_lock Stack Depth of this function is already explored: 96
 					kfree Stack Depth of this function is already explored: 808
 					mutex_unlock Stack Depth of this function is already explored: 80
@@ -317,10 +254,8 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 					kfree Stack Depth of this function is already explored: 808
 					kfree Stack Depth of this function is already explored: 808
 				exit_aio (depth:4) File Path: kernel/fork.c:1342 Stack Depth: 88
-
 					__init_swait_queue_head Stack Depth of this function is already explored: 0
 					kill_ioctx (depth:5) File Path: fs/aio.c:928 Stack Depth: 32
-
 						_raw_spin_lock Stack Depth of this function is already explored: 0
 						_raw_spin_unlock Stack Depth of this function is already explored: 0
 						_raw_spin_unlock Stack Depth of this function is already explored: 0
@@ -328,57 +263,43 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 						_raw_spin_lock Stack Depth of this function is already explored: 0
 						_raw_spin_unlock Stack Depth of this function is already explored: 0
 						vm_munmap (depth:6) File Path: fs/aio.c:883 Stack Depth: 0
-
 							__vm_munmap (depth:7) File Path: mm/mmap.c:2982 Stack Depth: -1
-
 								__mmap_lock_do_trace_start_locking Stack Depth of this function is already explored: 0
 								down_write_killable Stack Depth of this function is already explored: 72
 								__mmap_lock_do_trace_acquire_returned Stack Depth of this function is already explored: 0
 								do_vmi_munmap (depth:8) File Path: mm/mmap.c:2972 Stack Depth: 56
-
 									mas_find (depth:9) File Path: ./include/linux/mm.h:971 Stack Depth: 16
-
 										mas_walk Stack Depth of this function is already explored: 72
 										mas_walk Stack Depth of this function is already explored: 72
 										mas_walk Stack Depth of this function is already explored: 72
 										mas_next_slot Stack Depth of this function is already explored: 112
 									mmap_write_unlock.70660 (depth:9) File Path: mm/mmap.c:2692 Stack Depth: 8
-
 										__mmap_lock_do_trace_released Stack Depth of this function is already explored: 0
 										up_write Stack Depth of this function is already explored: 112
 									do_vmi_align_munmap (depth:9) File Path: mm/mmap.c:2696 Stack Depth: -1
-
 										__split_vma (depth:10) File Path: mm/mmap.c:2537 Stack Depth: 120
-
 										*(indirect-calls): mm/mmap.c:2334 (depth:10) Targets for indirect calls are not found in TyPM Analysis
 											vm_area_dup (depth:11) File Path: mm/mmap.c:2339 Stack Depth: 16
-
 												kmem_cache_alloc Stack Depth of this function is already explored: 848
 												kmem_cache_alloc Stack Depth of this function is already explored: 848
 												kmem_cache_free Stack Depth of this function is already explored: 816
 												__init_rwsem (depth:12) File Path: kernel/fork.c:445 Stack Depth: 0
-
 											mas_preallocate Stack Depth of this function is already explored: 960
 											vma_dup_policy (depth:11) File Path: mm/mmap.c:2355 Stack Depth: 16
-
 												__mpol_dup (depth:12) File Path: ./include/linux/mempolicy.h:90 Stack Depth: 48
-
 													kmem_cache_alloc Stack Depth of this function is already explored: 848
 													_raw_spin_lock Stack Depth of this function is already explored: 0
 													_raw_spin_unlock Stack Depth of this function is already explored: 0
 													current_cpuset_is_being_rebound (depth:13) File Path: mm/mempolicy.c:2587 Stack Depth: 8
-
 														__rcu_read_lock Stack Depth of this function is already explored: 0
 														__rcu_read_unlock Stack Depth of this function is already explored: 6160
 													cpuset_mems_allowed (depth:13) File Path: mm/mempolicy.c:2588 Stack Depth: 16
-
 														_raw_spin_lock_irqsave Stack Depth of this function is already explored: 24
 														__rcu_read_lock Stack Depth of this function is already explored: 0
 														__rcu_read_unlock Stack Depth of this function is already explored: 6160
 														_raw_spin_unlock_irqrestore Stack Depth of this function is already explored: 0
 													*(indirect-calls): mm/mempolicy.c:396 (depth:12) Targets for indirect calls are not found in TyPM Analysis
 											anon_vma_clone (depth:11) File Path: mm/mmap.c:2359 Stack Depth: 72
-
 												kmem_cache_alloc Stack Depth of this function is already explored: 848
 												up_write Stack Depth of this function is already explored: 112
 												kmem_cache_alloc Stack Depth of this function is already explored: 848
@@ -387,7 +308,6 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 												anon_vma_interval_tree_insert Stack Depth of this function is already explored: 32
 												up_write Stack Depth of this function is already explored: 112
 												unlink_anon_vmas (depth:12) File Path: mm/rmap.c:326 Stack Depth: 64
-
 													up_write Stack Depth of this function is already explored: 112
 													down_write Stack Depth of this function is already explored: 72
 													anon_vma_interval_tree_remove Stack Depth of this function is already explored: 72
@@ -401,39 +321,32 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 											down_write Stack Depth of this function is already explored: 72
 											up_write Stack Depth of this function is already explored: 112
 											vma_prepare (depth:11) File Path: mm/mmap.c:2374 Stack Depth: 24
-
 												uprobe_munmap Stack Depth of this function is already explored: 48
 												uprobe_munmap Stack Depth of this function is already explored: 48
 												down_write Stack Depth of this function is already explored: 72
 												vma_interval_tree_insert (depth:12) File Path: mm/mmap.c:391 Stack Depth: 0
-
 													__rb_insert_augmented Stack Depth of this function is already explored: 32
 												down_write Stack Depth of this function is already explored: 72
 												anon_vma_interval_tree_remove Stack Depth of this function is already explored: 72
 												anon_vma_interval_tree_remove Stack Depth of this function is already explored: 72
 												vma_interval_tree_remove (depth:12) File Path: mm/mmap.c:498 Stack Depth: 32
-
 													rb_next Stack Depth of this function is already explored: 0
 													__rb_erase_color Stack Depth of this function is already explored: 40
 												vma_interval_tree_remove Stack Depth of this function is already explored: 72
 											vma_complete (depth:11) File Path: mm/mmap.c:2385 Stack Depth: 40
-
 												vma_interval_tree_insert Stack Depth of this function is already explored: 32
 												vma_interval_tree_insert Stack Depth of this function is already explored: 32
 												vma_interval_tree_remove Stack Depth of this function is already explored: 72
 												vma_interval_tree_remove Stack Depth of this function is already explored: 72
 												mas_pause (depth:12) File Path: ./include/linux/mm.h:1047 Stack Depth: 0
-
 												mas_store_prealloc Stack Depth of this function is already explored: 1112
 												anon_vma_interval_tree_insert Stack Depth of this function is already explored: 32
 												anon_vma_interval_tree_insert Stack Depth of this function is already explored: 32
 												up_write Stack Depth of this function is already explored: 112
 												up_write Stack Depth of this function is already explored: 112
 												uprobe_mmap (depth:12) File Path: mm/mmap.c:548 Stack Depth: 96
-
 													mutex_lock Stack Depth of this function is already explored: 96
 													__update_ref_ctr (depth:13) File Path: kernel/events/uprobes.c:1339 Stack Depth: 48
-
 														get_user_pages_remote Stack Depth of this function is already explored: 7176
 														_printk Stack Depth of this function is already explored: 6656
 														__folio_put Stack Depth of this function is already explored: 200
@@ -452,12 +365,9 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 													up_read Stack Depth of this function is already explored: 112
 													up_read Stack Depth of this function is already explored: 112
 													install_breakpoint (depth:13) File Path: kernel/events/uprobes.c:1389 Stack Depth: 112
-
 														down_write Stack Depth of this function is already explored: 72
 														read_cache_page (depth:14) File Path: ./include/linux/pagemap.h:888 Stack Depth: 8
-
 															do_read_cache_folio (depth:15) File Path: mm/filemap.c:3813 Stack Depth: 96
-
 																__filemap_get_folio Stack Depth of this function is already explored: 1320
 																filemap_alloc_folio Stack Depth of this function is already explored: 448
 																filemap_add_folio Stack Depth of this function is already explored: 1096
@@ -475,17 +385,13 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 																__folio_put Stack Depth of this function is already explored: 200
 																folio_mark_accessed Stack Depth of this function is already explored: 16
 														shmem_read_mapping_page_gfp (depth:14) File Path: ./include/linux/shmem_fs.h:149 Stack Depth: 32
-
 															shmem_get_folio_gfp (depth:15) File Path: mm/shmem.c:4966 Stack Depth: 120
-
 																filemap_get_entry Stack Depth of this function is already explored: 280
 																shmem_swapin_folio (depth:16) File Path: mm/shmem.c:1997 Stack Depth: -1
-
 																	get_swap_device Stack Depth of this function is already explored: 24
 																	xa_load Stack Depth of this function is already explored: 88
 																	swap_cache_get_folio Stack Depth of this function is already explored: 1336
 																	mpol_shared_policy_lookup (depth:17) File Path: mm/shmem.c:2393 Stack Depth: 32
-
 																		_raw_read_lock Stack Depth of this function is already explored: 16
 																		rb_prev Stack Depth of this function is already explored: 0
 																		_raw_read_unlock Stack Depth of this function is already explored: 0
@@ -498,7 +404,6 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 																	xa_load Stack Depth of this function is already explored: 88
 																	folio_wait_writeback Stack Depth of this function is already explored: 1240
 																	shmem_replace_folio (depth:17) File Path: mm/shmem.c:1919 Stack Depth: -1
-
 																		mpol_shared_policy_lookup Stack Depth of this function is already explored: 48
 																		get_task_policy Stack Depth of this function is already explored: 0
 																		alloc_pages_mpol Stack Depth of this function is already explored: 5856
@@ -517,7 +422,6 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 																		folio_unlock Stack Depth of this function is already explored: 96
 																		__folio_put Stack Depth of this function is already explored: 200
 																	shmem_add_to_page_cache (depth:17) File Path: mm/shmem.c:1924 Stack Depth: 120
-
 																		_raw_spin_lock_irq Stack Depth of this function is already explored: 0
 																		xas_find_conflict Stack Depth of this function is already explored: 0
 																		xas_find_conflict Stack Depth of this function is already explored: 0
@@ -527,17 +431,14 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 																		_raw_spin_unlock_irq Stack Depth of this function is already explored: 0
 																		xas_nomem Stack Depth of this function is already explored: 864
 																	shmem_recalc_inode (depth:17) File Path: mm/shmem.c:1929 Stack Depth: 40
-
 																		_raw_spin_lock Stack Depth of this function is already explored: 0
 																		_raw_spin_unlock Stack Depth of this function is already explored: 0
 																		__SCT__might_resched Stack Depth of this function is already explored: 0
 																		__dquot_free_space (depth:18) File Path: ./include/linux/quotaops.h:374 Stack Depth: -1
-
 																			_raw_spin_lock Stack Depth of this function is already explored: 0
 																			*(indirect-calls): fs/quota/dquot.c:1646 (depth:18) Targets for indirect calls are not found in TyPM Analysis
 																			_raw_spin_unlock Stack Depth of this function is already explored: 0
 																			inode_sub_bytes (depth:19) File Path: fs/quota/dquot.c:1897 Stack Depth: 24
-
 																				_raw_spin_lock Stack Depth of this function is already explored: 0
 																				_raw_spin_unlock Stack Depth of this function is already explored: 0
 																			*(indirect-calls): fs/quota/dquot.c:1001 (depth:18) Targets for indirect calls are not found in TyPM Analysis
@@ -548,23 +449,19 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 																			*(indirect-calls): fs/quota/dquot.c:1646 (depth:18) Targets for indirect calls are not found in TyPM Analysis
 																			_raw_spin_unlock Stack Depth of this function is already explored: 0
 																			__inode_sub_bytes (depth:19) File Path: fs/quota/dquot.c:1925 Stack Depth: 0
-
 																			_raw_spin_unlock Stack Depth of this function is already explored: 0
 																			*(indirect-calls): fs/quota/dquot.c:372 (depth:18) Targets for indirect calls are not found in TyPM Analysis
 																			*(indirect-calls): fs/quota/dquot.c:372 (depth:18) Targets for indirect calls are not found in TyPM Analysis
 																			*(indirect-calls): fs/quota/dquot.c:372 (depth:18) Targets for indirect calls are not found in TyPM Analysis
 																			__srcu_read_unlock Stack Depth of this function is already explored: 0
 																			quota_send_warning (depth:19) File Path: fs/quota/dquot.c:1277 Stack Depth: 56
-
 																				__alloc_skb Stack Depth of this function is already explored: 992
 																				_printk Stack Depth of this function is already explored: 6656
 																				genlmsg_put (depth:20) File Path: fs/quota/netlink.c:56 Stack Depth: 16
-
 																					__nlmsg_put Stack Depth of this function is already explored: 64
 																				_printk Stack Depth of this function is already explored: 6656
 																				nla_put Stack Depth of this function is already explored: 48
 																				from_kqid_munged (depth:20) File Path: fs/quota/netlink.c:67 Stack Depth: 0
-
 																				nla_put_64bit Stack Depth of this function is already explored: 48
 																				nla_put Stack Depth of this function is already explored: 48
 																				nla_put Stack Depth of this function is already explored: 48
@@ -583,18 +480,15 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 																	folio_mark_dirty Stack Depth of this function is already explored: 8
 																	swap_free Stack Depth of this function is already explored: 6656
 																	put_swap_device (depth:17) File Path: mm/shmem.c:1937 Stack Depth: 8
-
 																		__rcu_read_lock Stack Depth of this function is already explored: 0
 																		*(indirect-calls): ./include/linux/percpu-refcount.h:335 (depth:17) Targets for indirect calls are not found in TyPM Analysis
 																		__rcu_read_unlock Stack Depth of this function is already explored: 6160
 																	xa_load Stack Depth of this function is already explored: 88
 																	_raw_spin_lock_irq Stack Depth of this function is already explored: 0
 																	__xa_cmpxchg (depth:17) File Path: ./include/linux/xarray.h:751 Stack Depth: 112
-
 																		xas_load Stack Depth of this function is already explored: 0
 																		xas_store Stack Depth of this function is already explored: 1056
 																		__xas_nomem (depth:18) File Path: lib/xarray.c:1619 Stack Depth: 16
-
 																			radix_tree_node_rcu_free Stack Depth of this function is already explored: 832
 																			_raw_spin_unlock_irq Stack Depth of this function is already explored: 0
 																			kmem_cache_alloc_lru Stack Depth of this function is already explored: 848
@@ -629,15 +523,12 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 																__mpol_put Stack Depth of this function is already explored: 816
 																shmem_add_to_page_cache Stack Depth of this function is already explored: 1176
 																shmem_inode_acct_blocks (depth:16) File Path: mm/shmem.c:1699 Stack Depth: 32
-
 																	security_vm_enough_memory_mm Stack Depth of this function is already explored: 6712
 																	__SCT__might_resched Stack Depth of this function is already explored: 0
 																	__percpu_counter_limited_add (depth:17) File Path: ./include/linux/percpu_counter.h:77 Stack Depth: 72
-
 																		_raw_spin_lock Stack Depth of this function is already explored: 0
 																		_raw_spin_unlock Stack Depth of this function is already explored: 0
 																	__dquot_alloc_space (depth:17) File Path: ./include/linux/quotaops.h:299 Stack Depth: -1
-
 																	*(indirect-calls): fs/quota/dquot.c:1001 (depth:17) Targets for indirect calls are not found in TyPM Analysis
 																		__srcu_read_lock Stack Depth of this function is already explored: 0
 																		_raw_spin_lock Stack Depth of this function is already explored: 0
@@ -645,11 +536,9 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 																		*(indirect-calls): fs/quota/dquot.c:1646 (depth:17) Targets for indirect calls are not found in TyPM Analysis
 																		_raw_spin_unlock Stack Depth of this function is already explored: 0
 																		inode_add_bytes (depth:18) File Path: fs/quota/dquot.c:1695 Stack Depth: 24
-
 																			_raw_spin_lock Stack Depth of this function is already explored: 0
 																			_raw_spin_unlock Stack Depth of this function is already explored: 0
 																		dquot_add_space (depth:18) File Path: fs/quota/dquot.c:1711 Stack Depth: 96
-
 																			_raw_spin_lock Stack Depth of this function is already explored: 0
 																			capable Stack Depth of this function is already explored: 6664
 																			ktime_get_real_seconds Stack Depth of this function is already explored: 0
@@ -667,7 +556,6 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 																		*(indirect-calls): fs/quota/dquot.c:1646 (depth:17) Targets for indirect calls are not found in TyPM Analysis
 																		_raw_spin_unlock Stack Depth of this function is already explored: 0
 																		__inode_add_bytes (depth:18) File Path: fs/quota/dquot.c:1735 Stack Depth: 0
-
 																		_raw_spin_unlock Stack Depth of this function is already explored: 0
 																		*(indirect-calls): fs/quota/dquot.c:372 (depth:17) Targets for indirect calls are not found in TyPM Analysis
 																		*(indirect-calls): fs/quota/dquot.c:372 (depth:17) Targets for indirect calls are not found in TyPM Analysis
@@ -700,36 +588,28 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 															folio_unlock Stack Depth of this function is already explored: 96
 														__folio_put Stack Depth of this function is already explored: 200
 														is_trap_insn (depth:14) File Path: kernel/events/uprobes.c:850 Stack Depth: 0
-
 															is_swbp_insn (depth:15) File Path: kernel/events/uprobes.c:236 Stack Depth: 0
-
 														arch_uprobe_analyze_insn (depth:14) File Path: kernel/events/uprobes.c:853 Stack Depth: -1
-
 															insn_decode Stack Depth of this function is already explored: 112
 															inat_get_opcode_attribute Stack Depth of this function is already explored: 0
 															inat_get_opcode_attribute Stack Depth of this function is already explored: 0
 															inat_get_opcode_attribute Stack Depth of this function is already explored: 0
 															inat_get_opcode_attribute Stack Depth of this function is already explored: 0
 															insn_rip_relative (depth:15) File Path: arch/x86/kernel/uprobes.c:341 Stack Depth: 16
-
 																insn_get_modrm Stack Depth of this function is already explored: 80
 														up_write Stack Depth of this function is already explored: 112
 														up_write Stack Depth of this function is already explored: 112
 														set_swbp (depth:14) File Path: kernel/events/uprobes.c:908 Stack Depth: 0
-
 															uprobe_write_opcode (depth:15) File Path: kernel/events/uprobes.c:571 Stack Depth: -1
-
 																is_swbp_insn Stack Depth of this function is already explored: 0
 																get_user_pages_remote Stack Depth of this function is already explored: 7176
 																mtree_load Stack Depth of this function is already explored: 88
 																put_page.58923 (depth:16) File Path: ./include/linux/mm.h:2491 Stack Depth: 0
-
 																	__folio_put Stack Depth of this function is already explored: 200
 																is_swbp_insn Stack Depth of this function is already explored: 0
 																is_swbp_insn Stack Depth of this function is already explored: 0
 																__warn_printk Stack Depth of this function is already explored: 6760
 																update_ref_ctr (depth:16) File Path: kernel/events/uprobes.c:492 Stack Depth: -1
-
 																	mas_find Stack Depth of this function is already explored: 128
 																	__update_ref_ctr Stack Depth of this function is already explored: 7224
 																	_printk Stack Depth of this function is already explored: 6656
@@ -743,7 +623,6 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 																copy_page Stack Depth of this function is already explored: 0
 																pagecache_get_page Stack Depth of this function is already explored: 1328
 																memcmp_pages (depth:16) File Path: ./include/linux/mm.h:4111 Stack Depth: 0
-
 																	memcmp Stack Depth of this function is already explored: 0
 																put_page.58923 Stack Depth of this function is already explored: 200
 																__folio_put Stack Depth of this function is already explored: 200
@@ -752,19 +631,14 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 																__SCT__might_resched Stack Depth of this function is already explored: 0
 																__mmu_notifier_invalidate_range_start Stack Depth of this function is already explored: 200
 																page_vma_mapped_walk (depth:16) File Path: kernel/events/uprobes.c:178 Stack Depth: 80
-
 																	_raw_spin_unlock Stack Depth of this function is already explored: 0
 																	not_found (depth:17) File Path: mm/page_vma_mapped.c:193 Stack Depth: 8
-
 																		__rcu_read_unlock Stack Depth of this function is already explored: 6160
 																		_raw_spin_unlock Stack Depth of this function is already explored: 0
 																	huge_pte_offset (depth:17) File Path: ./include/linux/hugetlb.h:1296 Stack Depth: 0
-
 																	huge_pte_lock (depth:17) File Path: mm/page_vma_mapped.c:203 Stack Depth: 8
-
 																		_raw_spin_lock Stack Depth of this function is already explored: 0
 																	check_pte (depth:17) File Path: mm/page_vma_mapped.c:204 Stack Depth: 8
-
 																	not_found Stack Depth of this function is already explored: 6168
 																	__pte_offset_map_lock Stack Depth of this function is already explored: 88
 																	pte_offset_map_nolock Stack Depth of this function is already explored: 6688
@@ -777,7 +651,6 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 																folio_add_lru_vma Stack Depth of this function is already explored: 4512
 																percpu_counter_add_batch Stack Depth of this function is already explored: 48
 																mm_trace_rss_stat (depth:16) File Path: ./include/linux/mm.h:2615 Stack Depth: 0
-
 																	__SCT__tp_func_rss_stat Stack Depth of this function is already explored: 0
 																percpu_counter_add_batch Stack Depth of this function is already explored: 48
 																mm_trace_rss_stat Stack Depth of this function is already explored: 0
@@ -798,7 +671,6 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 																update_ref_ctr Stack Depth of this function is already explored: 7224
 														set_swbp Stack Depth of this function is already explored: 7224
 													put_uprobe (depth:13) File Path: kernel/events/uprobes.c:1391 Stack Depth: 40
-
 														refcount_warn_saturate Stack Depth of this function is already explored: 6760
 														mutex_lock Stack Depth of this function is already explored: 96
 														kfree Stack Depth of this function is already explored: 808
@@ -811,7 +683,6 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 												unlink_anon_vmas Stack Depth of this function is already explored: 896
 												__mpol_put Stack Depth of this function is already explored: 816
 												vm_area_free (depth:12) File Path: mm/mmap.c:568 Stack Depth: 0
-
 													call_rcu Stack Depth of this function is already explored: 240
 												uprobe_mmap Stack Depth of this function is already explored: 7432
 											vma_complete Stack Depth of this function is already explored: 7472
@@ -823,11 +694,9 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 										down_write Stack Depth of this function is already explored: 72
 										up_write Stack Depth of this function is already explored: 112
 										mas_store_gfp (depth:10) File Path: mm/mmap.c:2556 Stack Depth: 112
-
 											__SCT__tp_func_ma_write Stack Depth of this function is already explored: 0
 											mas_wr_store_entry Stack Depth of this function is already explored: 1016
 											mas_nomem (depth:11) File Path: lib/maple_tree.c:5463 Stack Depth: 16
-
 												mas_destroy Stack Depth of this function is already explored: 960
 												_raw_spin_unlock Stack Depth of this function is already explored: 0
 												mas_alloc_nodes Stack Depth of this function is already explored: 960
@@ -835,7 +704,6 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 												mas_alloc_nodes Stack Depth of this function is already explored: 960
 										mas_find Stack Depth of this function is already explored: 128
 										mas_prev_range (depth:10) File Path: ./include/linux/mm.h:998 Stack Depth: 32
-
 											mas_prev_setup Stack Depth of this function is already explored: 88
 											mas_prev_slot Stack Depth of this function is already explored: 112
 										mas_store_gfp Stack Depth of this function is already explored: 1128
@@ -845,11 +713,9 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 										mas_find Stack Depth of this function is already explored: 128
 										mas_prev_range Stack Depth of this function is already explored: 144
 										unmap_region (depth:10) File Path: mm/mmap.c:2628 Stack Depth: -1
-
 											lru_add_drain Stack Depth of this function is already explored: 4552
 											tlb_gather_mmu Stack Depth of this function is already explored: 0
 											unmap_vmas (depth:11) File Path: mm/mmap.c:2310 Stack Depth: -1
-
 												__SCT__might_resched Stack Depth of this function is already explored: 0
 												__mmu_notifier_invalidate_range_start Stack Depth of this function is already explored: 200
 												__hugetlb_zap_begin Stack Depth of this function is already explored: 80
@@ -859,35 +725,28 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 												__SCT__might_resched Stack Depth of this function is already explored: 0
 												__mmu_notifier_invalidate_range_end Stack Depth of this function is already explored: 168
 											free_pgtables (depth:11) File Path: mm/mmap.c:2312 Stack Depth: 96
-
 												mas_find Stack Depth of this function is already explored: 128
 												down_write Stack Depth of this function is already explored: 72
 												up_write Stack Depth of this function is already explored: 112
 												unlink_anon_vmas Stack Depth of this function is already explored: 896
 												unlink_file_vma (depth:12) File Path: mm/memory.c:385 Stack Depth: 24
-
 													down_write Stack Depth of this function is already explored: 72
 													vma_interval_tree_remove Stack Depth of this function is already explored: 72
 													up_write Stack Depth of this function is already explored: 112
 												free_pgd_range (depth:12) File Path: ./include/asm-generic/hugetlb.h:73 Stack Depth: -1
-
 													pgd_clear_bad Stack Depth of this function is already explored: 16
 													p4d_clear_bad Stack Depth of this function is already explored: 24
 													pud_clear_bad Stack Depth of this function is already explored: 16
 													pmd_clear_bad Stack Depth of this function is already explored: 16
 													___pte_free_tlb (depth:13) File Path: ./arch/x86/include/asm/pgalloc.h:61 Stack Depth: 16
-
 														mod_node_page_state Stack Depth of this function is already explored: 0
 													___pmd_free_tlb (depth:13) File Path: ./arch/x86/include/asm/pgalloc.h:93 Stack Depth: 16
-
 														mod_node_page_state Stack Depth of this function is already explored: 0
 													__pti_set_user_pgtbl Stack Depth of this function is already explored: 0
 													___pud_free_tlb (depth:13) File Path: ./arch/x86/include/asm/pgalloc.h:130 Stack Depth: 24
-
 														mod_node_page_state Stack Depth of this function is already explored: 0
 													__pti_set_user_pgtbl Stack Depth of this function is already explored: 0
 													___p4d_free_tlb (depth:13) File Path: ./arch/x86/include/asm/pgalloc.h:174 Stack Depth: 0
-
 												mas_find Stack Depth of this function is already explored: 128
 												down_write Stack Depth of this function is already explored: 72
 												up_write Stack Depth of this function is already explored: 112
@@ -906,18 +765,15 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 										up_read Stack Depth of this function is already explored: 112
 										mas_find Stack Depth of this function is already explored: 128
 										__mt_destroy (depth:10) File Path: mm/mmap.c:0 Stack Depth: 16
-
 											mt_destroy_walk Stack Depth of this function is already explored: 864
 											call_rcu Stack Depth of this function is already explored: 240
 											mt_destroy_walk Stack Depth of this function is already explored: 864
 								__mmap_lock_do_trace_released Stack Depth of this function is already explored: 0
 								up_write Stack Depth of this function is already explored: 112
 						percpu_ref_kill_and_confirm (depth:6) File Path: ./include/linux/percpu-refcount.h:149 Stack Depth: 24
-
 							_raw_spin_lock_irqsave Stack Depth of this function is already explored: 24
 							__warn_printk Stack Depth of this function is already explored: 6760
 							__percpu_ref_switch_mode (depth:7) File Path: lib/percpu-refcount.c:395 Stack Depth: 88
-
 								init_wait_entry Stack Depth of this function is already explored: 0
 								prepare_to_wait_event Stack Depth of this function is already explored: 48
 								_raw_spin_unlock_irq Stack Depth of this function is already explored: 0
@@ -935,9 +791,7 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 					wait_for_completion Stack Depth of this function is already explored: 88
 					kfree Stack Depth of this function is already explored: 808
 				exit_mmap (depth:4) File Path: kernel/fork.c:1345 Stack Depth: -1
-
 					__mmu_notifier_release (depth:5) File Path: ./include/linux/mmu_notifier.h:413 Stack Depth: 88
-
 						_raw_spin_lock Stack Depth of this function is already explored: 0
 						interval_tree_iter_first Stack Depth of this function is already explored: 0
 						_raw_spin_unlock Stack Depth of this function is already explored: 0
@@ -951,25 +805,20 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 						_raw_spin_unlock Stack Depth of this function is already explored: 0
 						__srcu_read_unlock Stack Depth of this function is already explored: 0
 						synchronize_srcu (depth:6) File Path: mm/mmu_notifier.c:345 Stack Depth: 40
-
 							_raw_spin_lock_irqsave Stack Depth of this function is already explored: 24
 							init_srcu_struct_fields (depth:7) File Path: kernel/rcu/srcutree.c:415 Stack Depth: 72
-
 								kmalloc_trace Stack Depth of this function is already explored: 848
 								__mutex_init Stack Depth of this function is already explored: 0
 								__mutex_init Stack Depth of this function is already explored: 0
 								__mutex_init Stack Depth of this function is already explored: 0
 								init_timer_key Stack Depth of this function is already explored: 24
 								__alloc_percpu (depth:8) File Path: kernel/rcu/srcutree.c:257 Stack Depth: 0
-
 									pcpu_alloc Stack Depth of this function is already explored: 3688
 								rcu_segcblist_init Stack Depth of this function is already explored: 0
 								init_timer_key Stack Depth of this function is already explored: 24
 								ktime_get_mono_fast_ns Stack Depth of this function is already explored: 24
 								init_srcu_struct_nodes (depth:8) File Path: kernel/rcu/srcutree.c:264 Stack Depth: 48
-
 									rcu_init_geometry (depth:9) File Path: kernel/rcu/srcutree.c:175 Stack Depth: 24
-
 										_printk Stack Depth of this function is already explored: 6656
 										_printk Stack Depth of this function is already explored: 6656
 									kmalloc_large Stack Depth of this function is already explored: 464
@@ -986,14 +835,12 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 							rcu_gp_is_expedited Stack Depth of this function is already explored: 0
 							rcu_gp_is_normal Stack Depth of this function is already explored: 0
 							__synchronize_srcu (depth:7) File Path: kernel/rcu/srcutree.c:0 Stack Depth: 80
-
 								__SCT__might_resched Stack Depth of this function is already explored: 0
 								_raw_spin_lock_irqsave Stack Depth of this function is already explored: 24
 								init_srcu_struct_fields Stack Depth of this function is already explored: 6800
 								_raw_spin_unlock_irqrestore Stack Depth of this function is already explored: 0
 								__init_swait_queue_head Stack Depth of this function is already explored: 0
 								srcu_gp_start_if_needed (depth:8) File Path: kernel/rcu/srcutree.c:1347 Stack Depth: 104
-
 									_raw_spin_lock_irqsave Stack Depth of this function is already explored: 24
 									init_srcu_struct_fields Stack Depth of this function is already explored: 6800
 									_raw_spin_unlock_irqrestore Stack Depth of this function is already explored: 0
@@ -1010,7 +857,6 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 									queue_work_on Stack Depth of this function is already explored: 168
 									timer_reduce Stack Depth of this function is already explored: 128
 									srcu_funnel_exp_start (depth:9) File Path: kernel/rcu/srcutree.c:1022 Stack Depth: 48
-
 										_raw_spin_lock_irqsave Stack Depth of this function is already explored: 24
 										_raw_spin_unlock_irqrestore Stack Depth of this function is already explored: 0
 										_raw_spin_unlock_irqrestore Stack Depth of this function is already explored: 0
@@ -1021,7 +867,6 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 									_raw_spin_trylock Stack Depth of this function is already explored: 0
 									_raw_spin_lock_irqsave Stack Depth of this function is already explored: 24
 									srcu_gp_start (depth:9) File Path: kernel/rcu/srcutree.c:1050 Stack Depth: 0
-
 									queue_delayed_work_on Stack Depth of this function is already explored: 184
 									_raw_spin_unlock_irqrestore Stack Depth of this function is already explored: 0
 									srcu_funnel_exp_start Stack Depth of this function is already explored: 72
@@ -1030,9 +875,7 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 					down_read Stack Depth of this function is already explored: 160
 					__mmap_lock_do_trace_acquire_returned Stack Depth of this function is already explored: 0
 					ldt_arch_exit_mmap (depth:5) File Path: ./arch/x86/include/asm/mmu_context.h:219 Stack Depth: -1
-
 						tlb_gather_mmu_fullmm (depth:6) File Path: arch/x86/kernel/ldt.c:409 Stack Depth: 0
-
 						free_pgd_range Stack Depth of this function is already explored: 24
 						tlb_finish_mmu Stack Depth of this function is already explored: 1488
 					mas_find Stack Depth of this function is already explored: 128
@@ -1058,13 +901,11 @@ bpf_copy_from_user_task (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/t
 					fput Stack Depth of this function is already explored: 2088
 					__mpol_put Stack Depth of this function is already explored: 816
 					__vm_area_free (depth:5) File Path: mm/mmap.c:146 Stack Depth: 8
-
 						kmem_cache_free Stack Depth of this function is already explored: 816
 						kmem_cache_free Stack Depth of this function is already explored: 816
 					__SCT__cond_resched Stack Depth of this function is already explored: 0
 					mas_find Stack Depth of this function is already explored: 128
-					__SCT__tp_func_exit_mmap (depth:5) File Path: ./include/trace/events/mmap.h:98 Stack Depth: -1
- Function Not Found 
+					__SCT__tp_func_exit_mmap (depth:5) File Path: ./include/trace/events/mmap.h:98 Stack Depth: -1 Function Not Found 
 					__mt_destroy Stack Depth of this function is already explored: 880
 					__mmap_lock_do_trace_released Stack Depth of this function is already explored: 0
 					up_write Stack Depth of this function is already explored: 112

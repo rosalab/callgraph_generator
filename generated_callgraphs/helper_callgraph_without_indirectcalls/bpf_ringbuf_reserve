@@ -1,9 +1,7 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_ringbuf_reserve
 bpf_ringbuf_reserve (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
-
 	__bpf_ringbuf_reserve (depth:1) File Path: kernel/bpf/ringbuf.c:459 Stack Depth: 56
-
 		_raw_spin_trylock Stack Depth of this function is already explored: 0
 		_raw_spin_lock_irqsave Stack Depth of this function is already explored: 24
 		_raw_spin_unlock_irqrestore Stack Depth of this function is already explored: 0

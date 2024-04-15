@@ -1,7 +1,6 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_msg_push_data
 bpf_msg_push_data (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: -1
-
 	alloc_pages Stack Depth of this function is already explored: 5856
 	__folio_put Stack Depth of this function is already explored: 200
 Maximum Stack Depth Used by the helper bpf_msg_push_data is: 5856
