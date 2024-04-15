@@ -1,13 +1,9 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_copy_from_user
 bpf_copy_from_user (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 16
-
 	__copy_overflow (depth:1) File Path: ./include/linux/thread_info.h:233 Stack Depth: 0
-
 		__warn_printk Stack Depth of this function is already explored: 6760
-	__bad_copy_to (depth:1) File Path: ./include/linux/thread_info.h:246 Stack Depth: -1
- Function Not Found 
+	__bad_copy_to (depth:1) File Path: ./include/linux/thread_info.h:246 Stack Depth: -1 Function Not Found 
 	_copy_from_user (depth:1) File Path: ./include/linux/uaccess.h:183 Stack Depth: 8
-
 Maximum Stack Depth Used by the helper bpf_copy_from_user is: 6776
 -----------------------------------------

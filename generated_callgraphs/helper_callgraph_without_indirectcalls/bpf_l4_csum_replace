@@ -1,12 +1,9 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_l4_csum_replace
 bpf_l4_csum_replace (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 56
-
 	skb_ensure_writable Stack Depth of this function is already explored: 1128
 	inet_proto_csum_replace_by_diff (depth:1) File Path: net/core/filter.c:1982 Stack Depth: 12
-
 	inet_proto_csum_replace4 (depth:1) File Path: ./include/net/checksum.h:167 Stack Depth: 24
-
 	inet_proto_csum_replace4 Stack Depth of this function is already explored: 24
 Maximum Stack Depth Used by the helper bpf_l4_csum_replace is: 1184
 -----------------------------------------

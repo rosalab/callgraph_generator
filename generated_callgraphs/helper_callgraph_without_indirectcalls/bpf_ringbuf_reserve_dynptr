@@ -1,15 +1,11 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_ringbuf_reserve_dynptr
 bpf_ringbuf_reserve_dynptr (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 32
-
 	bpf_dynptr_set_null (depth:1) File Path: kernel/bpf/ringbuf.c:587 Stack Depth: 0
-
 	bpf_dynptr_check_size (depth:1) File Path: kernel/bpf/ringbuf.c:591 Stack Depth: 0
-
 	bpf_dynptr_set_null Stack Depth of this function is already explored: 0
 	__bpf_ringbuf_reserve Stack Depth of this function is already explored: 80
 	bpf_dynptr_set_null Stack Depth of this function is already explored: 0
 	bpf_dynptr_init (depth:1) File Path: kernel/bpf/ringbuf.c:605 Stack Depth: 0
-
 Maximum Stack Depth Used by the helper bpf_ringbuf_reserve_dynptr is: 112
 -----------------------------------------

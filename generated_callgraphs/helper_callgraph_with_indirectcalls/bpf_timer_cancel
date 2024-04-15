@@ -1,0 +1,9 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_timer_cancel
+bpf_timer_cancel (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 48
+	__rcu_read_lock Stack Depth of this function is already explored: 0
+	bpf_prog_put Stack Depth of this function is already explored: 3200
+	hrtimer_cancel Stack Depth of this function is already explored: 1160
+	__rcu_read_unlock Stack Depth of this function is already explored: 12856
+Maximum Stack Depth Used by the helper bpf_timer_cancel is: 12904
+-----------------------------------------

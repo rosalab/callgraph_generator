@@ -1,0 +1,8 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_dynptr_write
+bpf_dynptr_write (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 16
+	__bpf_skb_store_bytes Stack Depth of this function is already explored: 2000
+	__bpf_xdp_store_bytes Stack Depth of this function is already explored: 56
+	__warn_printk Stack Depth of this function is already explored: 1008
+Maximum Stack Depth Used by the helper bpf_dynptr_write is: 2016
+-----------------------------------------

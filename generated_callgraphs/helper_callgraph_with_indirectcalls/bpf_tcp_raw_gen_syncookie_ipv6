@@ -1,0 +1,7 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_tcp_raw_gen_syncookie_ipv6
+bpf_tcp_raw_gen_syncookie_ipv6 (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 32
+	tcp_parse_mss_option Stack Depth of this function is already explored: 0
+	__cookie_v6_init_sequence Stack Depth of this function is already explored: 1808
+Maximum Stack Depth Used by the helper bpf_tcp_raw_gen_syncookie_ipv6 is: 1840
+-----------------------------------------

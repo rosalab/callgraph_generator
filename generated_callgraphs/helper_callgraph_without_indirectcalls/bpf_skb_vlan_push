@@ -1,10 +1,8 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_skb_vlan_push
 bpf_skb_vlan_push (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 40
-
 	csum_partial Stack Depth of this function is already explored: 0
 	skb_vlan_push (depth:1) File Path: net/core/filter.c:3179 Stack Depth: 48
-
 		__warn_printk Stack Depth of this function is already explored: 6760
 		pskb_expand_head Stack Depth of this function is already explored: 1048
 		skb_under_panic Stack Depth of this function is already explored: 8

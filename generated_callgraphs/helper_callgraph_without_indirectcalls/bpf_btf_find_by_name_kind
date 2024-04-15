@@ -1,16 +1,12 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_btf_find_by_name_kind
 bpf_btf_find_by_name_kind (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 40
-
 	bpf_find_btf_id (depth:1) File Path: kernel/bpf/btf.c:7833 Stack Depth: 88
-
 		bpf_get_btf_vmlinux (depth:2) File Path: kernel/bpf/btf.c:570 Stack Depth: 0
-
 		strcmp Stack Depth of this function is already explored: 0
 		refcount_warn_saturate Stack Depth of this function is already explored: 6760
 		_raw_spin_lock_bh Stack Depth of this function is already explored: 0
 		idr_get_next (depth:2) File Path: kernel/bpf/btf.c:588 Stack Depth: 88
-
 			radix_tree_next_chunk Stack Depth of this function is already explored: 24
 		strcmp Stack Depth of this function is already explored: 0
 		refcount_warn_saturate Stack Depth of this function is already explored: 6760
@@ -25,16 +21,12 @@ bpf_btf_find_by_name_kind (depth:0) File Path: /home/sidchintamaneni/helpers_cfg
 		_raw_spin_unlock_bh Stack Depth of this function is already explored: 24
 	strcmp Stack Depth of this function is already explored: 0
 	anon_inode_getfd (depth:1) File Path: kernel/bpf/btf.c:7453 Stack Depth: 56
-
 		get_unused_fd_flags (depth:2) File Path: fs/anon_inodes.c:197 Stack Depth: 0
-
 			alloc_fd (depth:3) File Path: fs/file.c:559 Stack Depth: 64
-
 				_raw_spin_lock Stack Depth of this function is already explored: 0
 				_find_next_zero_bit Stack Depth of this function is already explored: 8
 				_find_next_zero_bit Stack Depth of this function is already explored: 8
 				expand_files (depth:4) File Path: fs/file.c:524 Stack Depth: 104
-
 					_raw_spin_unlock Stack Depth of this function is already explored: 0
 					__SCT__might_resched Stack Depth of this function is already explored: 0
 					init_wait_entry Stack Depth of this function is already explored: 0
@@ -44,10 +36,8 @@ bpf_btf_find_by_name_kind (depth:0) File Path: /home/sidchintamaneni/helpers_cfg
 					_raw_spin_lock Stack Depth of this function is already explored: 0
 					_raw_spin_unlock Stack Depth of this function is already explored: 0
 					alloc_fdtable (depth:5) File Path: fs/file.c:176 Stack Depth: 40
-
 						kmalloc_trace Stack Depth of this function is already explored: 848
 						kvmalloc_node (depth:6) File Path: ./include/linux/slab.h:766 Stack Depth: 24
-
 							kmalloc_large_node Stack Depth of this function is already explored: 464
 							kmalloc_node_trace Stack Depth of this function is already explored: 856
 							__kmalloc_node Stack Depth of this function is already explored: 872
@@ -58,7 +48,6 @@ bpf_btf_find_by_name_kind (depth:0) File Path: /home/sidchintamaneni/helpers_cfg
 					synchronize_rcu Stack Depth of this function is already explored: 480
 					_raw_spin_lock Stack Depth of this function is already explored: 0
 					__free_fdtable (depth:5) File Path: fs/file.c:192 Stack Depth: 8
-
 						kvfree Stack Depth of this function is already explored: 1368
 						kvfree Stack Depth of this function is already explored: 1368
 						kfree Stack Depth of this function is already explored: 808
@@ -67,74 +56,57 @@ bpf_btf_find_by_name_kind (depth:0) File Path: /home/sidchintamaneni/helpers_cfg
 				_printk Stack Depth of this function is already explored: 6656
 				_raw_spin_unlock Stack Depth of this function is already explored: 0
 		try_module_get (depth:2) File Path: fs/anon_inodes.c:87 Stack Depth: 0
-
 			__SCT__tp_func_module_get Stack Depth of this function is already explored: 0
 		ihold Stack Depth of this function is already explored: 0
 		alloc_file_pseudo (depth:2) File Path: fs/anon_inodes.c:109 Stack Depth: 80
-
 			strlen Stack Depth of this function is already explored: 0
 			d_alloc_pseudo (depth:3) File Path: fs/file_table.c:330 Stack Depth: 16
-
 				__d_alloc (depth:4) File Path: fs/dcache.c:1756 Stack Depth: 48
-
 					kmem_cache_alloc_lru Stack Depth of this function is already explored: 848
 					kmalloc_large Stack Depth of this function is already explored: 464
 					kmalloc_trace Stack Depth of this function is already explored: 848
 					__kmalloc Stack Depth of this function is already explored: 864
 					kmem_cache_free Stack Depth of this function is already explored: 816
 					d_set_d_op (depth:5) File Path: fs/dcache.c:1676 Stack Depth: 0
-
 					*(indirect-calls): fs/dcache.c:1679 (depth:4) Targets for indirect calls are not found in TyPM Analysis
 					kfree Stack Depth of this function is already explored: 808
 					kmem_cache_free Stack Depth of this function is already explored: 816
 				d_set_d_op Stack Depth of this function is already explored: 0
 			mntget (depth:3) File Path: fs/file_table.c:333 Stack Depth: 0
-
 			d_instantiate (depth:3) File Path: fs/file_table.c:334 Stack Depth: 24
-
 				security_d_instantiate (depth:4) File Path: fs/dcache.c:1878 Stack Depth: 24
-
 				*(indirect-calls): security/security.c:3915 (depth:4) Targets for indirect calls are not found in TyPM Analysis
 				_raw_spin_lock Stack Depth of this function is already explored: 0
 				__d_instantiate (depth:4) File Path: fs/dcache.c:1880 Stack Depth: 32
-
 					_raw_spin_lock Stack Depth of this function is already explored: 0
 					_raw_spin_unlock Stack Depth of this function is already explored: 0
 				_raw_spin_unlock Stack Depth of this function is already explored: 0
 			alloc_empty_file (depth:3) File Path: fs/file_table.c:319 Stack Depth: 32
-
 				capable (depth:4) File Path: fs/file_table.c:193 Stack Depth: 8
-
 					_printk Stack Depth of this function is already explored: 6656
 					security_capable Stack Depth of this function is already explored: 40
 				__percpu_counter_sum Stack Depth of this function is already explored: 48
 				kmem_cache_alloc Stack Depth of this function is already explored: 848
 				security_file_alloc (depth:4) File Path: fs/file_table.c:152 Stack Depth: 24
-
 					kmem_cache_alloc Stack Depth of this function is already explored: 848
 					*(indirect-calls): security/security.c:2713 (depth:4) Targets for indirect calls are not found in TyPM Analysis
 					security_file_free Stack Depth of this function is already explored: 832
 				__put_cred Stack Depth of this function is already explored: 1384
 				kmem_cache_free Stack Depth of this function is already explored: 816
 				__mutex_init (depth:4) File Path: fs/file_table.c:160 Stack Depth: 0
-
 				percpu_counter_add_batch Stack Depth of this function is already explored: 48
 				_printk Stack Depth of this function is already explored: 6656
 			file_init_path (depth:3) File Path: fs/file_table.c:321 Stack Depth: 24
-
 				errseq_sample (depth:4) File Path: ./include/linux/pagemap.h:113 Stack Depth: 0
-
 				errseq_sample Stack Depth of this function is already explored: 0
 			ihold Stack Depth of this function is already explored: 0
 			path_put Stack Depth of this function is already explored: 2072
 		iput Stack Depth of this function is already explored: 1744
 		module_put Stack Depth of this function is already explored: 0
 		put_unused_fd (depth:2) File Path: fs/anon_inodes.c:213 Stack Depth: 24
-
 			_raw_spin_lock Stack Depth of this function is already explored: 0
 			_raw_spin_unlock Stack Depth of this function is already explored: 0
 		fd_install (depth:2) File Path: fs/anon_inodes.c:208 Stack Depth: 32
-
 			_raw_spin_lock Stack Depth of this function is already explored: 0
 			_raw_spin_unlock Stack Depth of this function is already explored: 0
 	refcount_warn_saturate Stack Depth of this function is already explored: 6760

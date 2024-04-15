@@ -1,23 +1,16 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_skc_lookup_tcp
 bpf_skc_lookup_tcp (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
-
 	__bpf_skc_lookup (depth:1) File Path: net/core/filter.c:6739 Stack Depth: 40
-
 		sk_lookup (depth:2) File Path: net/core/filter.c:6680 Stack Depth: 56
-
 			__inet_lookup_established (depth:3) File Path: ./include/net/inet_hashtables.h:419 Stack Depth: 72
-
 				inet_ehashfn Stack Depth of this function is already explored: 928
 				refcount_warn_saturate Stack Depth of this function is already explored: 6760
 				sock_gen_put Stack Depth of this function is already explored: 2688
 			__inet_lookup_listener Stack Depth of this function is already explored: 6944
 			__udp4_lib_lookup (depth:3) File Path: net/core/filter.c:6620 Stack Depth: 64
-
 				udp4_lib_lookup2 (depth:4) File Path: net/ipv4/udp.c:484 Stack Depth: 72
-
 					inet_lookup_reuseport (depth:5) File Path: net/ipv4/udp.c:444 Stack Depth: 24
-
 						udp_ehashfn Stack Depth of this function is already explored: 928
 						inet_ehashfn Stack Depth of this function is already explored: 928
 						*(indirect-calls): net/ipv4/inet_hashtables.c:361 (depth:5) Targets for indirect calls are not found in TyPM Analysis
@@ -28,7 +21,6 @@ bpf_skc_lookup_tcp (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_k
 				inet_lookup_run_sk_lookup Stack Depth of this function is already explored: 6816
 				udp4_lib_lookup2 Stack Depth of this function is already explored: 6912
 			__inet6_lookup_established (depth:3) File Path: ./include/net/inet6_hashtables.h:95 Stack Depth: 72
-
 				inet6_ehashfn Stack Depth of this function is already explored: 936
 				refcount_warn_saturate Stack Depth of this function is already explored: 6760
 				sock_gen_put Stack Depth of this function is already explored: 2688
@@ -36,7 +28,6 @@ bpf_skc_lookup_tcp (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_k
 			*(indirect-calls): net/core/filter.c:6634 (depth:2) Targets for indirect calls are not found in TyPM Analysis
 			__warn_printk Stack Depth of this function is already explored: 6760
 		get_net_ns_by_id (depth:2) File Path: net/core/filter.c:6682 Stack Depth: 24
-
 			__rcu_read_lock Stack Depth of this function is already explored: 0
 			idr_find Stack Depth of this function is already explored: 0
 			refcount_warn_saturate Stack Depth of this function is already explored: 6760

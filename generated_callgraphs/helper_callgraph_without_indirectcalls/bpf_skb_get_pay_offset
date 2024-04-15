@@ -1,12 +1,9 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_skb_get_pay_offset
 bpf_skb_get_pay_offset (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
-
 	skb_get_poff (depth:1) File Path: net/core/filter.c:170 Stack Depth: 40
-
 		__skb_flow_dissect Stack Depth of this function is already explored: 312
 		__skb_get_poff (depth:2) File Path: net/core/flow_dissector.c:1939 Stack Depth: 32
-
 			skb_copy_bits Stack Depth of this function is already explored: 72
 Maximum Stack Depth Used by the helper bpf_skb_get_pay_offset is: 352
 -----------------------------------------

@@ -1,0 +1,6 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_skc_lookup_tcp
+bpf_skc_lookup_tcp (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
+	__bpf_skc_lookup Stack Depth of this function is already explored: 12920
+Maximum Stack Depth Used by the helper bpf_skc_lookup_tcp is: 12920
+-----------------------------------------

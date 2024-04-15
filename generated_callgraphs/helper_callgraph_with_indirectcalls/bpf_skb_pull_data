@@ -1,0 +1,6 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_skb_pull_data
+bpf_skb_pull_data (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 8
+	skb_ensure_writable Stack Depth of this function is already explored: 1936
+Maximum Stack Depth Used by the helper bpf_skb_pull_data is: 1944
+-----------------------------------------

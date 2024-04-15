@@ -1,10 +1,8 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_get_ns_current_pid_tgid
 bpf_get_ns_current_pid_tgid (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 56
-
 	task_active_pid_ns Stack Depth of this function is already explored: 0
 	ns_match (depth:1) File Path: kernel/bpf/helpers.c:608 Stack Depth: 0
-
 	__task_pid_nr_ns Stack Depth of this function is already explored: 24
 	__task_pid_nr_ns Stack Depth of this function is already explored: 24
 Maximum Stack Depth Used by the helper bpf_get_ns_current_pid_tgid is: 80

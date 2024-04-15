@@ -1,7 +1,6 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_map_pop_elem
 bpf_map_pop_elem (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
-
 *(indirect-calls): kernel/bpf/helpers.c:106 (depth:0) Targets for indirect calls are not found in TyPM Analysis
 Maximum Stack Depth Used by the helper bpf_map_pop_elem is: 0
 -----------------------------------------

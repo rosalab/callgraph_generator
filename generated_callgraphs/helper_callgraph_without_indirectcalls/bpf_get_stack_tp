@@ -1,9 +1,7 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_get_stack_tp
 bpf_get_stack_tp (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
-
 	bpf_get_stack (depth:1) File Path: kernel/trace/bpf_trace.c:1748 Stack Depth: 0
-
 		__bpf_get_stack Stack Depth of this function is already explored: 6896
 Maximum Stack Depth Used by the helper bpf_get_stack_tp is: 6896
 -----------------------------------------

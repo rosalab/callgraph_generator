@@ -1,0 +1,7 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_sock_ops_getsockopt
+bpf_sock_ops_getsockopt (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 56
+	bpf_sock_ops_get_syn Stack Depth of this function is already explored: 0
+	__bpf_getsockopt Stack Depth of this function is already explored: 13232
+Maximum Stack Depth Used by the helper bpf_sock_ops_getsockopt is: 13288
+-----------------------------------------

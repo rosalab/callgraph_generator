@@ -1,7 +1,6 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_sk_release
 bpf_sk_release (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 0
-
 	sock_gen_put Stack Depth of this function is already explored: 2688
 Maximum Stack Depth Used by the helper bpf_sk_release is: 2688
 -----------------------------------------

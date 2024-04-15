@@ -1,0 +1,8 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_get_task_stack
+bpf_get_task_stack (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 48
+	refcount_warn_saturate Stack Depth of this function is already explored: 1008
+	__bpf_get_stack Stack Depth of this function is already explored: 2280
+	put_task_stack Stack Depth of this function is already explored: 1016
+Maximum Stack Depth Used by the helper bpf_get_task_stack is: 2328
+-----------------------------------------

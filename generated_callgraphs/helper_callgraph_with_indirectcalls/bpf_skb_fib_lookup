@@ -1,0 +1,9 @@
+-----------------------------------------
+Generating Call Graph for Helper Function: bpf_skb_fib_lookup
+bpf_skb_fib_lookup (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 32
+	bpf_ipv4_fib_lookup Stack Depth of this function is already explored: 12856
+	bpf_ipv6_fib_lookup Stack Depth of this function is already explored: 0
+	dev_get_by_index_rcu Stack Depth of this function is already explored: 0
+	is_skb_forwardable Stack Depth of this function is already explored: 0
+Maximum Stack Depth Used by the helper bpf_skb_fib_lookup is: 12888
+-----------------------------------------

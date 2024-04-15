@@ -1,7 +1,6 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_find_vma
 bpf_find_vma (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 80
-
 	__mmap_lock_do_trace_start_locking Stack Depth of this function is already explored: 0
 	down_read_trylock Stack Depth of this function is already explored: 0
 	__mmap_lock_do_trace_acquire_returned Stack Depth of this function is already explored: 0

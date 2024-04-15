@@ -1,14 +1,9 @@
 -----------------------------------------
 Generating Call Graph for Helper Function: bpf_strtol
 bpf_strtol (depth:0) File Path: /home/sidchintamaneni/helpers_cfg/test_kernel/BigAllLinkedDbg.bc Stack Depth: 32
-
 	__bpf_strtoull (depth:1) File Path: kernel/bpf/helpers.c:504 Stack Depth: -1
-
 		_parse_integer_fixup_radix (depth:2) File Path: kernel/bpf/helpers.c:482 Stack Depth: 0
-
 		_parse_integer (depth:2) File Path: kernel/bpf/helpers.c:483 Stack Depth: 0
-
 			_parse_integer_limit (depth:3) File Path: lib/kstrtox.c:93 Stack Depth: 16
-
 Maximum Stack Depth Used by the helper bpf_strtol is: 48
 -----------------------------------------
