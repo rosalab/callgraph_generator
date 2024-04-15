@@ -49,7 +49,27 @@ for this project, I am using LLVM 15 for the project.
  
 
 - TODO
-    - Explains how cgenerator code works
-    
+    ### Checks and finding issue in the generated callgraph 
+        #### Known Issues
+          #### Known issues just with direct calls
+            - Still have some trouble with "Function Not Found Stuff"
+            - Function stack depth from llvm llc tool 
+              - sanity check 
+              - see why it's not emitting function depths for some functions 
+            - some indirectcall targets are not getting 
+          #### After replacing indirectcall callsites
+              replaced with targets functions
+        #### Bugs to be Found
+    ### logistics
+    - Update Documentation
+    - Clean the code
+    ### Analysis Stuff
+    - Identify the functions that are to be blacklisted
+      - because this is increasing the stack size of helper functions unnecessarly
+    - Currently I am using so many helper functions, should narrow the scope
+      - can we narrow the helper functions scope? because any tracing program can nest on
+        any BPF program type 
+
+      
 
  
